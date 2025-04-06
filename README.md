@@ -65,6 +65,7 @@ A new small school requires a complete IT infrastructure. The solution must prov
 - [`server_config/`](./server_config) – Windows Server configuration steps
 - [`diagrams/`](./diagrams) – Logical and physical topology images
 - [`policies/`](./policies) – User groups, GPOs, and ACL documentation
+- [`Capstone.zip`](./Capstone.zip) – Portable Documentaion
 
 ---
 
