@@ -101,7 +101,7 @@ This project is part of an educational assignment and is not licensed for commer
 
 ---
 
-## VLan Design
+## VLAN Design
 
 |   VLAN | Name       | Interface Assigned               | Purpose                            |
 |-------:|:-----------|:---------------------------------|------------------------------------|
