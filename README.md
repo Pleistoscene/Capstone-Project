@@ -43,7 +43,6 @@ A new small school requires a complete IT infrastructure. The solution must prov
 
 ## Team
 
-**Emerald Tech – MITT Spring 2025**
 - Aaron Queskekapow – Lead Network Designer & Sysadmin
 
 ---
