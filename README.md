@@ -101,6 +101,8 @@ This project is part of an educational assignment and is not licensed for commer
 
 ---
 
+## VLan Design
+
 |   VLAN | Name       | Interface Assigned               | Purpose                            |
 |-------:|:-----------|:---------------------------------|------------------------------------|
 |     10 | Servers    | S1: F0/1-3                       | AD, DNS, DHCP, Fileshare, Backups  |
@@ -113,6 +115,8 @@ This project is part of an educational assignment and is not licensed for commer
 |    999 | ParkingLot | Trunk ports (inter-switch links) | Default VLAN                       |
 
 ---
+
+## DHCP
 
 |   VLAN | Name       | Subnet          | Gateway        | DHCP Range        | Notes                               |
 |-------:|:-----------|:----------------|:---------------|:------------------|:------------------------------------|
