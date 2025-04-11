@@ -128,16 +128,16 @@ This project is part of an educational assignment and is not licensed for commer
 
 ---
 
-|   VLAN | Name       | Interface Assigned               |
-|-------:|:-----------|:---------------------------------|
-|     10 | Servers    | S1: F0/1-2                       |
-|     20 | IT         | S1: F0/3                         |
-|     30 | Staff      | S1: F0/4-8                       |
-|     40 | Students   | S2: F0/8                         |
-|     50 | Classroom  | S3: F0/1-8                       |
-|     60 | Library    | S3: F0/9-15                      |
-|     70 | Lab        | S4: F0/1-21                      |
-|    999 | ParkingLot | Trunk ports (inter-switch links) |
+|   VLAN | Name       | Interface Assigned               | Purpose                            |
+|-------:|:-----------|:---------------------------------|------------------------------------|
+|     10 | Servers    | S1: F0/1-3                       | AD, DNS, DHCP, Fileshare, Backups  |
+|     20 | IT         | S1: F0/3                         | IT/Admin Access                    |
+|     30 | Staff      | S1: F0/4-8                       | Staff                              |
+|     40 | Students   | S2: F0/8                         | Student Use                        |
+|     50 | Classroom  | S3: F0/1-8                       | In-classroom PCs                   |
+|     60 | Library    | S3: F0/9-15                      | Library PCs                        |
+|     70 | Lab        | S4: F0/1-21                      | Computer Lab PCs                   |
+|    999 | ParkingLot | Trunk ports (inter-switch links) | Default VLAN                       |
 
 ---
 
