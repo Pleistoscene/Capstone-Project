@@ -120,7 +120,7 @@ This project is part of an educational assignment and is not licensed for commer
 |-------:|:-----------|:----------------|:---------------|:------------------|:---------------------------------------------------------|
 |     10 | Servers    | 192.168.10.0/24 | 192.168.10.254 | Static Only       | DC, File, Web Servers are static                         |
 |     20 | IT         | 192.168.20.0/24 | 192.168.20.254 | Static Only       | Switches and IT PC are static                            |
-|     30 | Staff      | 192.168.30.0/24 | 192.168.30.254 | 192.168.30.50–59  | Office PCs are DHCP, Printer, Staff Wi-Fi are static     |
+|     30 | Staff      | 192.168.30.0/24 | 192.168.30.254 | 192.168.30.50–69  | Office PCs are DHCP, Printer, Staff Wi-Fi are static     |
 |     40 | Students   | 192.168.40.0/24 | 192.168.40.254 | 192.168.40.50–129 | Wi-Fi device is static                                   |
 |     50 | Classroom  | 192.168.50.0/24 | 192.168.50.254 | 192.168.50.50–57  | PCs are DHCP, none static                                |
 |     60 | Library    | 192.168.60.0/24 | 192.168.60.254 | 192.168.60.50–55  | PCs are DHCP, Printer is static                          |
