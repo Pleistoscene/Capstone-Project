@@ -83,14 +83,14 @@ This project is part of an educational assignment and is not licensed for commer
 | S4          | VLAN 20     | 192.168.20.14  | 255.255.255.0 | 192.168.20.254    |
 | DC-01       | S1 F0/1     | 192.168.10.10  | 255.255.255.0 | 192.168.10.254    |
 | FS-01       | S1 F0/2     | 192.168.10.11  | 255.255.255.0 | 192.168.10.254    |
-| Web Server  | Virtual     | 192.168.10.12  | 255.255.255.0 | 192.168.10.254    |
-| IT PC       | S1 F0/3     | 192.168.20.50  | 255.255.255.0 | 192.168.20.254    |
-| OFF-PC 1    | S1 F0/4     | DHCP           | DHCP          | DHCP              |
-| OFF-PC 2    | S1 F0/5     | DHCP           | DHCP          | DHCP              |
-| OFF-PC 3    | S1 F0/6     | DHCP           | DHCP          | DHCP              |
-| OFF-Printer | S1 F0/7     | 192.168.30.49  | 255.255.255.0 | 192.168.30.254    |
-| OFF-Wifi    | S1 F0/8     | 192.168.30.48  | 255.255.255.0 | 192.168.30.254    |
-| STU-Wifi    | S2 F0/8     | 192.168.40.49  | 255.255.255.0 | 192.168.40.254    |
+| Web Server  | S1 F0/3     | 192.168.10.12  | 255.255.255.0 | 192.168.10.254    |
+| IT PC       | S1 F0/4     | 192.168.20.50  | 255.255.255.0 | 192.168.20.254    |
+| OFF-PC 1    | S1 F0/5     | DHCP           | DHCP          | DHCP              |
+| OFF-PC 2    | S1 F0/6     | DHCP           | DHCP          | DHCP              |
+| OFF-PC 3    | S1 F0/7     | DHCP           | DHCP          | DHCP              |
+| OFF-Printer | S1 F0/8     | 192.168.30.49  | 255.255.255.0 | 192.168.30.254    |
+| OFF-Wifi    | S1 F0/10    | 192.168.30.48  | 255.255.255.0 | 192.168.30.254    |
+| STU-Wifi    | S2 F0/10    | 192.168.40.49  | 255.255.255.0 | 192.168.40.254    |
 | CL-PC 1–8   | S3 F0/1-8   | DHCP           | DHCP          | DHCP              |
 | LI-PC 1–6   | S3 F0/9-14  | DHCP           | DHCP          | DHCP              |
 | LI-Printer  | S3 F0/15    | 192.168.60.49  | 255.255.255.0 | 192.168.60.254    |
@@ -104,12 +104,12 @@ This project is part of an educational assignment and is not licensed for commer
 |   VLAN | Name       | Interface Assigned               | Purpose                            |
 |-------:|:-----------|:---------------------------------|------------------------------------|
 |     10 | Servers    | S1: F0/1-3                       | AD, DNS, DHCP, Fileshare, Backups  |
-|     20 | IT         | S1: F0/3                         | IT/Admin Access                    |
-|     30 | Staff      | S1: F0/4-8                       | Staff                              |
-|     40 | Students   | S2: F0/8                         | Student Use                        |
+|     20 | IT         | S1: F0/4                         | IT/Admin Access                    |
+|     30 | Staff      | S1: F0/5-10                      | Office PCs/Printer/Staff-Wifi      |
+|     40 | Students   | S2: F0/10                        | Student Wifi                       |
 |     50 | Classroom  | S3: F0/1-8                       | In-classroom PCs                   |
-|     60 | Library    | S3: F0/9-15                      | Library PCs                        |
-|     70 | Lab        | S4: F0/1-21                      | Computer Lab PCs                   |
+|     60 | Library    | S3: F0/9-15                      | Library PCs/Printer                |
+|     70 | Lab        | S4: F0/1-21                      | Computer Lab PCs/Printer           |
 |    999 | ParkingLot | Trunk ports (inter-switch links) | Default VLAN                       |
 
 ---
