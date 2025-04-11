@@ -53,7 +53,7 @@ This project is part of an educational assignment and is not licensed for commer
 
 ---
 
-## Network Addressing Tables
+## Network Addressing Table
 
 | Device      | Interface   | IP Address     | Subnet Mask   | Default Gateway   |
 |:------------|:------------|:---------------|:--------------|:------------------|
