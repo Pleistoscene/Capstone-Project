@@ -1,4 +1,4 @@
-# MITT NSA630 Capstone Project – Emerald Tech
+# MITT NSA630 Capstone Project
 
 ## Overview
 
@@ -12,11 +12,12 @@ A new small school requires a complete IT infrastructure. The solution must prov
 - Internet access
 - Directory services (Active Directory)
 - DNS and DHCP
-- Internal email services
-- Internal web hosting
+- Email services
+- Website
 - Network segmentation and VLANs
 - Redundancy at Layer 2 and Layer 3
 - Security hardening and access control
+- Secured GPO's
 
 ---
 
@@ -24,11 +25,9 @@ A new small school requires a complete IT infrastructure. The solution must prov
 
 - Cisco Routers & Switches (Configured via CLI)
 - Windows Server 2025 (Standard Desktop Experience)
-- Proxmox VE (for server virtualization)
-- Microsoft Active Directory, DNS, DHCP
-- Microsoft Exchange Server (internal email)
-- IIS Web Server (internal website)
-- NAT via MITT Capstone subnet
+- Ubuntu 24.04 LTS
+- 2 School PC Towers (DC-01 && FS-01)
+- 1 TP-Link Wifi Router
 
 ---
 
