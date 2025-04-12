@@ -117,7 +117,7 @@ Students must operate within a controlled environment to prevent unauthorized so
 - Disable Microsoft Store: Block access to Microsoft Store apps
 
 **Scope:**  
-Linked to `Students` OU (assumed), filtered for student accounts only.
+Linked to `Students` OU filtering for student accounts only.
 
 ---
 
@@ -130,7 +130,7 @@ Deploys the internal certificate authority (CA) for `rahj.ca` as a trusted root 
 Prevents SSL/TLS certificate warnings when accessing secure internal services such as internal websites (`https://rahj.ca`), mail, or applications that use internal certificates.
 
 **Scope:**  
-Linked at domain level or to all computer OUs.
+Linked at domain level.
 
 ---
 
