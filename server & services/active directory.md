@@ -1,5 +1,5 @@
 
-# Active Directory 1
+# Active Directory
 
 **Domain:** RAHJ.local  
 **Author:** Hapreet  
