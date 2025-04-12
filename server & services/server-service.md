@@ -1,4 +1,4 @@
-# DNS, DHCP, and Web Server Configuration – RAHJ High School
+# DNS, DHCP, and Web Server Configuration
 
 **Domain:** RAHJ.local  
 **Author:** Aaron Queskekapow
