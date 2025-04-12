@@ -22,7 +22,7 @@ Aaron notifies Ms. Green about his COVID-related absence and confirms he will co
 
 Ms. Green successfully receives the email in her inbox. This confirms that email delivery is working within the domain.
 
-![Receive-Alice fr Aaron](images/02 - Receive-Alice fr Aaron.png)
+![Receive-Alice fr Aaron](images/02%20-%20Receive-Alice%20fr%20Aaron.png)
 
 ---
 
@@ -32,7 +32,7 @@ Ms. Green successfully receives the email in her inbox. This confirms that email
 
 Ms. Green sends a professional reply, offering support and understanding regarding Aaron’s situation.
 
-![Send-Green to Aaron](images/03 - Send-Green to Aaron.png)
+![Send-Green to Aaron](images/03%20-%20Send-Green%20to%20Aaron.png)
 
 ---
 
@@ -42,7 +42,7 @@ Ms. Green sends a professional reply, offering support and understanding regardi
 
 Aaron successfully receives the response in his inbox, confirming that two-way communication is functioning properly within the custom domain.
 
-![Receive-Aaron fr Alice](images/04 - Receive-Aaron fr Alice.png)
+![Receive-Aaron fr Alice](images/04%20-%20Receive-Aaron%20fr%20Alice.png)
 
 ---
 
