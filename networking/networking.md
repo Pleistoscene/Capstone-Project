@@ -60,7 +60,7 @@
 
 |   VLAN | Name       | Subnet          | Gateway        | DHCP Range        | Notes                                                    |
 |-------:|:-----------|:----------------|:---------------|:------------------|:---------------------------------------------------------|
-|     10 | Servers    | 192.168.10.0/24 | 192.168.10.254 | Static Only       | DC, File, Web Servers are static                         |
+|     10 | Servers    | 192.168.10.0/24 | 192.168.10.254 | Static Only       | DCs, File, Web Servers are static                         |
 |     20 | IT         | 192.168.20.0/24 | 192.168.20.254 | Static Only       | Switches and IT PC are static                            |
 |     30 | Staff      | 192.168.30.0/24 | 192.168.30.254 | 192.168.30.50–69  | Office PCs are DHCP, Printer, Staff Wi-Fi are static     |
 |     40 | Students   | 192.168.40.0/24 | 192.168.40.254 | 192.168.40.50–129 | Wi-Fi device is static                                   |
