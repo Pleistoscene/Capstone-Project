@@ -77,7 +77,7 @@ Monitoring is handled internally via Windows Security Auditing:
 
 📷 *Screenshot:* GPMC showing SecurityAudit settings, Event Viewer logs
 
-## 🔐 VLAN & ACL Enforcement
+## VLAN & ACL Enforcement
 
 Segmentation is enforced through VLANs and inbound router ACLs:
 
