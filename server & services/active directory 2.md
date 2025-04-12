@@ -134,7 +134,7 @@ Linked at domain level.
 
 ---
 
-## 🔄 11. Change Log
+## 11. Change Log
 
 | Version | Date       | Author   | Description                                  |
 |---------|------------|----------|----------------------------------------------|
