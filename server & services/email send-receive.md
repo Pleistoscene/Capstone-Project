@@ -10,7 +10,7 @@ This document demonstrates a successful email exchange using a custom domain (`r
 **To:** alice.green@rahj.ca  
 **Subject:** Absent This Week Due to Illness  
 
-Aaron notifies Ms. Green about his COVID-related absence and confirms he will continue assignments remotely.
+Aaron notifies Ms. Green about his COVID-related absence.
 
 ![Send-Aaron to Green](images/01%20-%20Send-Aaron%20to%20Green.png)
 
@@ -30,7 +30,7 @@ Ms. Green successfully receives the email in her inbox. This confirms that email
 **From:** alice.green@rahj.ca  
 **To:** aaron.hayes@student.rahj.ca  
 
-Ms. Green sends a professional reply, offering support and understanding regarding Aaron’s situation.
+Ms. Green sends a reply.
 
 ![Send-Green to Aaron](images/03%20-%20Send-Green%20to%20Aaron.png)
 
