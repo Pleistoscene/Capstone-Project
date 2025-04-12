@@ -6,8 +6,6 @@
 **Last Updated:** 2025-04-12  
 **Version:** 1.2  
 
----
-
 ## Change Log
 
 | Date       | Version | Description                         |
@@ -16,13 +14,9 @@
 | 2025-04-11 | 1.1     | Finalized DHCP and Web configuration|
 | 2025-04-12 | 1.2     | Added service redundancy and backup |
 
----
-
 ## DNS, DHCP, and Web Server Configuration
 
 This document outlines the implementation of DNS, DHCP, and Web Server services at RAHJ High School, using Windows Server 2025 and Ubuntu-based LAMP stack technologies. All configurations were performed on internal domain-joined infrastructure and aligned with best practices for availability, fault tolerance, and service redundancy.
-
----
 
 ## DNS Server/Service Configuration
 
@@ -41,8 +35,6 @@ The global DNS setup ensures public access to the school website from anywhere u
 ![DNS](images/DNS-Local-rahjca.png)
 
 These entries are statically assigned and published through GoDaddy to map the public IP address via NAT.
-
----
 
 ### Local DNS – `RAHJ.local`
 
@@ -63,8 +55,6 @@ The local DNS supports Active Directory, local resource resolution, and PTR reco
 
 ![DNS](images/DNS-ReverseLookup.png)
 
----
-
 ## DHCP Server/Service Configuration
 
 ### DHCP Server
@@ -82,8 +72,6 @@ Two DHCP servers were configured for high availability:
 **DC-02:**  
 ![DHCP](images/DC-02-DHCP-DNS.png)
 
----
-
 ### DHCP Scopes / Pools
 
 Each VLAN has its own dedicated scope with a reserved IP range and proper lease settings:
@@ -99,8 +87,6 @@ Each VLAN has its own dedicated scope with a reserved IP range and proper lease 
 **DHCP Options:**
 - Option 003 (Router): VLAN default gateway
 - Option 006 (DNS): 192.168.10.10, 192.168.10.13
-
----
 
 ## Web Applications – School Website
 
@@ -121,8 +107,6 @@ The school website is hosted internally but is accessible globally via HTTPS usi
 - News
 - Staff
 - Contact
-
----
 
 ## Service Redundancy and Backup
 
