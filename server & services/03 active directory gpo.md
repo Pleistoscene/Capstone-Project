@@ -6,8 +6,6 @@
 **Last Updated:** 2025-04-11  
 **Version:** 1.1  
 
----
-
 ## Change Log
 
 | Version | Date       | Author   | Description                                  |
@@ -15,11 +13,7 @@
 | 1.0     | 2025-04-09 | Aaron  | Initial creation of GPO documentation        |
 | 1.1     | 2025-04-11 | Aaron    | Added SecurityAudit scope and filtering info |
 
----
-
 ![GPOs](images/GPO.png)
-
----
 
 ## GPO: Allow Domain Users Local Logon
 
@@ -32,8 +26,6 @@ By default, certain systems restrict local logon access to administrators. This 
 **Scope:**  
 Applied to OUs or systems requiring user access (e.g., lab, classroom, office PCs).
 
----
-
 ## GPO: RAHJ High Shares
 
 **Purpose:**  
@@ -44,8 +36,6 @@ Improves accessibility to shared files (e.g., departmental resources) and reduce
 
 **Scope:**  
 Linked at domain or user-specific OU level.
-
----
 
 ## GPO: Core Security Policy
 
@@ -68,8 +58,6 @@ Prevents use of weak passwords and protects against brute-force attacks. Expande
 
 **Scope:**  
 Applied at the domain level (`RAHJ.local`).
-
----
 
 ## GPO: SecurityAudit
 
@@ -107,8 +95,6 @@ Audit events can be viewed using the **Event Viewer** on any domain-joined machi
 
 For advanced filtering and correlation, tools like **Windows Event Forwarding**, **SIEM**, or **PowerShell** can be used.
 
----
-
 ## GPO: Student Restrictions
 
 **Purpose:**  
@@ -127,8 +113,6 @@ Students must operate within a controlled environment to prevent unauthorized so
 
 **Scope:**  
 Linked to `Students` OU filtering for student accounts only.
-
----
 
 ## GPO: Trusted Root for rahj.ca
 
