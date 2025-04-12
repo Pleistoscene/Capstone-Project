@@ -6,13 +6,13 @@ This document demonstrates a successful email exchange using a custom domain (`r
 ---
 
 ## Step 1: Aaron Sends Email to Alice
-**From:** aaron.hayes@student.rahj.ca  
+**From:** aaron.hayes@student.rahj.ca 
 **To:** alice.green@rahj.ca  
 **Subject:** Absent This Week Due to Illness  
 
 Aaron notifies Ms. Green about his COVID-related absence and confirms he will continue assignments remotely.
 
-![Send-Aaron to Green](images/01 - Send-Aaron to Green.png)
+![Send-Aaron to Green](images/01%20-%20Send-Aaron%20to%20Green.png)
 
 ---
 
