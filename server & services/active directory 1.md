@@ -129,6 +129,10 @@ The **Special** permission:
 
 ## 7. Group Policy Object (GPO) - Network Drive Mapping
 
+![Network-Drive](images/Network-Drive.png)
+
+![GPO](images/GPO-2.png)
+
 A GPO was created to automate the mapping of the shared folder to all domain users.
 
 ### Steps:
