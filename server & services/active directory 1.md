@@ -117,19 +117,9 @@ The **Special** permission:
 |               |           | IT-SecG             | Full Control      |
 |               |           | Instructors-SecG    | Special           |
 
-![ACL - RAHJ Shares Folder](images/ACL%20-%20RAHJ%20Shares%20Folder.png)
-
-![ACL - RAHJ Shares - IT Folder](images/ACL%20-%20RAHJ%20Shares%20-%20IT%20Folder.png)
-
-![ACL - RAHJ Shares - Staff Folder](images/ACL%20-%20RAHJ%20Shares%20-%20Staff%20Folder.png)
-
-![ACL - RAHJ Shares - Instructors Folder](images/ACL%20-%20RAHJ%20Shares%20-%20Instructors%20Folder.png)
-
 ---
 
 ## 7. Group Policy Object (GPO) - Network Drive Mapping
-
-![Network-Drive](images/Network-Drive.png)
 
 ![GPO](images/GPO-2.png)
 
@@ -153,8 +143,23 @@ A GPO was created to automate the mapping of the shared folder to all domain use
 
 ## 8. Verification
 - Confirm that the `S:` drive appears on user computers
+  
+  ![Network-Drive](images/Network-Drive.png)
+
 - Ensure access is aligned with security group permissions
+  ![ACL - RAHJ Shares Folder](images/ACL%20-%20RAHJ%20Shares%20Folder.png)
+
+  ![ACL - RAHJ Shares - IT Folder](images/ACL%20-%20RAHJ%20Shares%20-%20IT%20Folder.png)
+
+  ![ACL - RAHJ Shares - Staff Folder](images/ACL%20-%20RAHJ%20Shares%20-%20Staff%20Folder.png)
+
+  ![ACL - RAHJ Shares - Instructors Folder](images/ACL%20-%20RAHJ%20Shares%20-%20Instructors%20Folder.png)
+
 - Verify that unauthorized actions (e.g., deleting or modifying others' files) are restricted
+
+  ![ACL-IT-Test](images/ACL-IT-Test.png)
+
+  ![ACL-Staff-Test](images/ACL-Staff-Test.png)
 
 ---
 
