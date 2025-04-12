@@ -166,6 +166,7 @@ A GPO was created to automate the mapping of the shared folder to all domain use
 ## 9. Troubleshooting Tips
 - If the drive doesn’t appear, run `gpupdate /force` and log off/on
 - Ensure firewall on `FS-01` allows SMB file sharing
+- If you’ve configured ACLs on any routers in your network, verify that SMB (port 445) isn’t being blocked — otherwise, file sharing may fail.
 - Confirm the GPO is linked and applied to the correct user group or OU
 
 ---
