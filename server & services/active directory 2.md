@@ -1,10 +1,14 @@
-# Active Directory 1 – Group Policy Object (GPO) Documentation
+# Active Directory 2 – Group Policy Object (GPO) Documentation
 
 **Domain:** RAHJ.local  
 **Author:** Hapreet  
 **Date Created:** 2025-04-09  
 **Last Updated:** 2025-04-11  
 **Version:** 1.1  
+
+---
+
+![GPOs](images/GPO.png)
 
 ---
 
