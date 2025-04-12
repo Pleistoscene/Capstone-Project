@@ -43,8 +43,6 @@
 | LAB-PC 1–20 | S4 F0/1-20  | DHCP           | DHCP          | DHCP              |
 | LAB-Printer | S4 F0/21    | 192.168.70.49  | 255.255.255.0 | 192.168.70.254    |
 
----
-
 ## VLAN Design
 
 |   VLAN | Name       | Interface Assigned               | Purpose                            |
@@ -57,8 +55,6 @@
 |     60 | Library    | S3: F0/9-15                      | Library PCs/Printer                |
 |     70 | Lab        | S4: F0/1-21                      | Computer Lab PCs/Printer           |
 |    999 | ParkingLot | Trunk ports (inter-switch links) | Default VLAN                       |
-
----
 
 ## DHCP
 
