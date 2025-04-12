@@ -90,6 +90,14 @@ Linked to both:
 **Security Filtering:**  
 Applies only to **Authenticated Users**
 
+**How to Access Logs:**  
+Audit events can be viewed using the **Event Viewer** on any domain-joined machine or centralized logging system:
+1. Open **Event Viewer** (`eventvwr.msc`)
+2. Navigate to: `Windows Logs > Security`
+3. Filter by Event IDs for specific audit categories (e.g., 4624 for successful logon, 4625 for failed logon)
+
+For advanced filtering and correlation, tools like **Windows Event Forwarding**, **SIEM**, or **PowerShell** can be used.
+
 ---
 
 ## GPO: Student Restrictions
