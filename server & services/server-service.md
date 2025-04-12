@@ -104,6 +104,8 @@ Each VLAN has its own dedicated scope with a reserved IP range and proper lease 
 
 ## Web Applications – School Website
 
+![Website](images/Website.png)
+
 The school website is hosted internally but is accessible globally via HTTPS using a custom domain and SSL.
 
 - **Domain:** `rahj.ca` (and `www.rahj.ca`)
