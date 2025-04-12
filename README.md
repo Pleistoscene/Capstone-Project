@@ -34,10 +34,7 @@ A new small school requires a complete IT infrastructure. The solution must prov
 ## Project Contents
 
 - [`Capstone_Documentation.md`]– Detailed project breakdown
-- [`network_config/`] – Router and switch configs
-- [`server_config/`]– Windows Server configuration steps
-- [`diagrams/`] – Logical and physical topology images
-- [`policies/`]– User groups, GPOs, and ACL documentation
+- [`server_config/`]– Windows Server configurations.
 
 ---
 
