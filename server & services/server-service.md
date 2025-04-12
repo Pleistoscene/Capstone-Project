@@ -38,7 +38,7 @@ The global DNS setup ensures public access to the school website from anywhere u
   - `dc-01.rahj.local`
   - `dc-02.rahj.local`
 
-📷 *Insert Screenshot Here:* `DNS - Local - rahj ca.png`
+![DNS-Local](images/DNS-Local-rahjca.png)
 
 These entries are statically assigned and published through GoDaddy to map the public IP address via NAT.
 
