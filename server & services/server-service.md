@@ -38,7 +38,7 @@ The global DNS setup ensures public access to the school website from anywhere u
   - `dc-01.rahj.local`
   - `dc-02.rahj.local`
 
-![DNS-Local](images/DNS-Local-rahjca.png)
+![DNS](images/DNS-Local-rahjca.png)
 
 These entries are statically assigned and published through GoDaddy to map the public IP address via NAT.
 
@@ -56,12 +56,12 @@ The local DNS supports Active Directory, local resource resolution, and PTR reco
     - Workstations ➝ `192.168.x.x`
 - **NS Records:** Redundant DNS via both DC-01 and DC-02
 
-![DNS-Local](images/DNS-Local-RAHJlocal.png`)
+![DNS](images/DNS-Local-RAHJlocal.png`)
 
 - **Reverse Lookup Zone:** `192.168.10.x`
   - PTR records exist for all key hosts
 
-![DNS-Local](images/DNS-ReverseLookup.png`)
+![DNS](images/DNS-ReverseLookup.png`)
 
 ---
 
