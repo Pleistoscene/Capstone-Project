@@ -1,4 +1,4 @@
-# Security Hardening Documentation – RAHJ High School
+# Security Hardening Documentation
 
 **Author:** Aaron Queskekapow  
 **Project:** MITT NSA630 Capstone – Final Infrastructure Security Summary  
