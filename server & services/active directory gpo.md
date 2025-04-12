@@ -1,4 +1,4 @@
-# Active Directory 2 – Group Policy Object (GPO) Documentation
+# Active Directory – Group Policy Object (GPO) Documentation
 
 **Domain:** RAHJ.local  
 **Author:** Aaron
