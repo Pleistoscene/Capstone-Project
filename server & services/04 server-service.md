@@ -141,4 +141,8 @@ To ensure continued operations in the event of failure, both service-level and b
 - **DC-01** is backed up to file server **FS-01**
 - Backup path: `\\FS-01\Backup`
 - Access restricted to **IT Department only**
-- Enables full recovery in case of domain controller failure
+- Inheritance is disabled on the backup folder to prevent unauthorized access
+- Enables full recovery in case of domain controller failure  
+  📄 **For detailed steps, see:** [Domain Controller Backup Guide (PDF)](/pdfs/Domain_Controller_Backup_Cleaned.pdf)
+
+
