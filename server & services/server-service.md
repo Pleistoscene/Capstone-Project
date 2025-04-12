@@ -18,7 +18,7 @@
 
 ---
 
-## DNS, DHCP, and Web Server Configuration – RAHJ High School
+## DNS, DHCP, and Web Server Configuration
 
 This document outlines the implementation of DNS, DHCP, and Web Server services at RAHJ High School, using Windows Server 2025 and Ubuntu-based LAMP stack technologies. All configurations were performed on internal domain-joined infrastructure and aligned with best practices for availability, fault tolerance, and service redundancy.
 
