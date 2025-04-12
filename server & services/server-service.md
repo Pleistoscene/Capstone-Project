@@ -76,7 +76,10 @@ Two DHCP servers were configured for high availability:
 - **Failover Mode:** Load Balance (50/50)
 - **DHCP Role Installed & Authorized** on both servers
 
-![DHCP](images/DC-01-DHCP-DNS.png)
+**DC-01:**  
+![DHCP](images/DC-01-DHCP-DNS.png)  
+
+**DC-02:**  
 ![DHCP](images/DC-02-DHCP-DNS.png)
 
 ---
