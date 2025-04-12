@@ -93,7 +93,7 @@ Segmentation is enforced through VLANs and inbound router ACLs:
 
 📷 *Screenshot:* `show access-lists`, router interface config (`ip access-group`)
 
-## Summary for Security Rubric Evaluation
+## Summary for Security Hardening
 
 | Category               | Implementation Highlights                            |
 |------------------------|------------------------------------------------------|
