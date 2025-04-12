@@ -117,6 +117,12 @@ The **Special** permission:
 |               |           | IT-SecG             | Full Control      |
 |               |           | Instructors-SecG    | Special           |
 
+![ACL - RAHJ Shares - Instructors Folder](images/ACL%20-%20RAHJ%20Shares%20-%20Instructors%20Folder.png)
+
+![ACL - RAHJ Shares - IT Folder](images/ACL%20-%20RAHJ%20Shares%20-%20IT%20Folder.png)
+
+![ACL - RAHJ Shares - Staff Folder](images/ACL%20-%20RAHJ%20Shares%20-%20Staff%20Folder.png)
+
 ---
 
 ## 7. Group Policy Object (GPO) - Network Drive Mapping
