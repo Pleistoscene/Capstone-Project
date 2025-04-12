@@ -30,8 +30,6 @@ The `FileAccess` OU contains role-based security groups (`IT-SecG`, `Staff-SecG`
 
 We used only one set of file access groups to reduce complexity, making permission management scalable and centralized. These groups were then used in ACLs to apply NTFS permissions for the shared folders.
 
----
-
 ## Active Directory Organizational Structure Screenshots
 
 ### File Access Security Groups  
@@ -49,26 +47,18 @@ We used only one set of file access groups to reduce complexity, making permissi
 ### Students OU  
 ![Students OU](images/AD%20-%20Students.png)
 
----
-
 # Shared Folder Directory and Permissions Configuration
 
 ## 1. Purpose
 This document outlines the configuration and deployment of shared folders within the RAHJ.local domain. It includes folder structure, security group assignments, permission configurations, and Group Policy Object (GPO) setup to map network drives for users.
 
----
-
 ## 2. Scope
 This document is intended for system administrators and IT staff responsible for managing shared folder access, NTFS permissions, and drive mapping through Group Policy in the RAHJ.local domain.
-
----
 
 ## 3. Assumptions
 - The domain `RAHJ.local` is fully configured and functional
 - `FS-01` is a domain-joined file server
 - Users are authenticated via Active Directory
-
----
 
 ## 4. Folder Structure and Sharing
 Under the shared path `RAHJ Shares`, three departmental folders were created:
@@ -77,8 +67,6 @@ Under the shared path `RAHJ Shares`, three departmental folders were created:
 - Instructors
 
 These folders were shared using the network path `\\FS-01\RAHJ Shares` and mapped to drive letter `S:` on user machines.
-
----
 
 ## 5. Security Group Configuration
 An Organizational Unit (OU) named `FileAccess` was created under the `Groups` OU in Active Directory Domain Services (AD DS).
@@ -91,8 +79,6 @@ Within the `FileAccess` OU, the following security groups were created:
 Each group contains users specific to their department.
 
 `IT-SecG` has Full Control on all folders as they are the IT Administrators of the domain.
-
----
 
 ## 6. Permission Configuration
 The **Special** permission:
@@ -117,8 +103,6 @@ The **Special** permission:
 |               |           | IT-SecG             | Full Control      |
 |               |           | Instructors-SecG    | Special           |
 
----
-
 ## 7. Group Policy Object (GPO) - Network Drive Mapping
 
 ![GPO](images/GPO-2.png)
@@ -138,8 +122,6 @@ A GPO was created to automate the mapping of the shared folder to all domain use
    - **Label as**: Network Shares  
    - **Drive Letter**: S:
 7. Click OK to apply the settings
-
----
 
 ## 8. Verification
 - Confirm that the `S:` drive appears on user computers
@@ -161,21 +143,15 @@ A GPO was created to automate the mapping of the shared folder to all domain use
 
   ![ACL-Staff-Test](images/ACL-Staff-Test.png)
 
----
-
 ## 9. Troubleshooting Tips
 - If the drive doesn’t appear, run `gpupdate /force` and log off/on
 - Ensure firewall on `FS-01` allows SMB file sharing
 - If you’ve configured ACLs on any routers in your network, verify that SMB (port 445) isn’t being blocked — otherwise, file sharing may fail.
 - Confirm the GPO is linked and applied to the correct user group or OU
 
----
-
 ## 10. Backup Recommendations
 - Backup folder structure and NTFS permissions regularly
 - Store backup documentation in a secure, access-controlled location (GitHub)
-
----
 
 ## 11. Change Log
 
@@ -183,7 +159,3 @@ A GPO was created to automate the mapping of the shared folder to all domain use
 |---------|------------|-------------------------------------------------------|--------------------|
 | 1.0     | 2025-04-03 | Initial configuration                                 | Aaron Queskekapow  |
 | 1.1     | 2025-04-05 | Added Special permission explanation and enhancements | Aaron Queskekapow  |
-
----
-
-**End of Document**
