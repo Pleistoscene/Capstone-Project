@@ -143,6 +143,6 @@ To ensure continued operations in the event of failure, both service-level and b
 - Access restricted to **IT Department only**
 - Inheritance is disabled on the backup folder to prevent unauthorized access
 - Enables full recovery in case of domain controller failure  
-  **For detailed steps, see:** [Domain Controller Backup Guide (PDF)](/pdfs/domain_controller_backup_guide.pdf)
+  **For detailed steps, see:** [Domain Controller Backup Guide](./pdfs/domain_controller_backup_guide.pdf)
 
 
