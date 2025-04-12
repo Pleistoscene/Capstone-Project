@@ -1,7 +1,7 @@
 # Active Directory 2 – Group Policy Object (GPO) Documentation
 
 **Domain:** RAHJ.local  
-**Author:** Hapreet  
+**Author:** Aaron
 **Date Created:** 2025-04-09  
 **Last Updated:** 2025-04-11  
 **Version:** 1.1  
@@ -138,7 +138,6 @@ Linked at domain level or to all computer OUs.
 
 | Version | Date       | Author   | Description                                  |
 |---------|------------|----------|----------------------------------------------|
-| 1.0     | 2025-04-09 | Hapreet  | Initial creation of GPO documentation        |
+| 1.0     | 2025-04-09 | Aaron  | Initial creation of GPO documentation        |
 | 1.1     | 2025-04-11 | Aaron    | Added SecurityAudit scope and filtering info |
-|         |            |          | Standardized header format for documentation |
 
