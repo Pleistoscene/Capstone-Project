@@ -56,12 +56,12 @@ The local DNS supports Active Directory, local resource resolution, and PTR reco
     - Workstations ➝ `192.168.x.x`
 - **NS Records:** Redundant DNS via both DC-01 and DC-02
 
-![DNS](images/DNS-Local-RAHJlocal.png`)
+![DNS](images/DNS-Local-RAHJlocal.png)
 
 - **Reverse Lookup Zone:** `192.168.10.x`
   - PTR records exist for all key hosts
 
-![DNS](images/DNS-ReverseLookup.png`)
+![DNS](images/DNS-ReverseLookup.png)
 
 ---
 
