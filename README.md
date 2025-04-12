@@ -90,6 +90,7 @@ This project is part of an educational assignment and is not licensed for commer
 | OFF-PC 3    | S1 F0/7     | DHCP           | DHCP          | DHCP              |
 | OFF-Printer | S1 F0/8     | 192.168.30.49  | 255.255.255.0 | 192.168.30.254    |
 | OFF-Wifi    | S1 F0/10    | 192.168.30.48  | 255.255.255.0 | 192.168.30.254    |
+| DC-02       | S2 F0/1     | 192.168.10.13  | 255.255.255.0 | 192.168.10.254    |
 | STU-Wifi    | S2 F0/10    | 192.168.40.49  | 255.255.255.0 | 192.168.40.254    |
 | CL-PC 1–8   | S3 F0/1-8   | DHCP           | DHCP          | DHCP              |
 | LI-PC 1–6   | S3 F0/9-14  | DHCP           | DHCP          | DHCP              |
