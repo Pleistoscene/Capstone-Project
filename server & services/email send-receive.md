@@ -12,7 +12,7 @@ This document demonstrates a successful email exchange using a custom domain (`r
 
 Aaron notifies Ms. Green about his COVID-related absence and confirms he will continue assignments remotely.
 
-![Send-Aaron to Green](server%20&%20services/images/01%20-%20Send-Aaron%20to%20Green.png)
+![Send-Aaron to Green](images/01%20-%20Send-Aaron%20to%20Green.png)
 
 ---
 
