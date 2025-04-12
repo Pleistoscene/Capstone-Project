@@ -8,6 +8,15 @@
 
 ---
 
+## 11. Change Log
+
+| Version | Date       | Author   | Description                                  |
+|---------|------------|----------|----------------------------------------------|
+| 1.0     | 2025-04-09 | Aaron  | Initial creation of GPO documentation        |
+| 1.1     | 2025-04-11 | Aaron    | Added SecurityAudit scope and filtering info |
+
+---
+
 ![GPOs](images/GPO.png)
 
 ---
@@ -131,13 +140,4 @@ Prevents SSL/TLS certificate warnings when accessing secure internal services su
 
 **Scope:**  
 Linked at domain level.
-
----
-
-## 11. Change Log
-
-| Version | Date       | Author   | Description                                  |
-|---------|------------|----------|----------------------------------------------|
-| 1.0     | 2025-04-09 | Aaron  | Initial creation of GPO documentation        |
-| 1.1     | 2025-04-11 | Aaron    | Added SecurityAudit scope and filtering info |
 
