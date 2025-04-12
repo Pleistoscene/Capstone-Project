@@ -72,3 +72,17 @@
 |     60 | Library    | 192.168.60.0/24 | 192.168.60.254 | 192.168.60.50–55  | PCs are DHCP, Printer is static                          |
 |     70 | Lab        | 192.168.70.0/24 | 192.168.70.254 | 192.168.70.50–69  | PCs are DHCP, Printer is static                          |
 |    999 | ParkingLot | N/A             | N/A            | None              | No IPs assigned                                          |
+
+## EtherChannel (Port Channel) Configuration
+
+EtherChannel is used to increase bandwidth and provide redundancy between switches. The following port channels were configured:
+
+| Port Channel | Switches         | Interfaces Used     | Description                      |
+|--------------|------------------|----------------------|----------------------------------|
+| Po1          | S1 ↔ S3          | F0/23, F0/24         | Trunk link carrying VLANs 10–70 |
+| Po1          | S2 ↔ S4          | F0/23, F0/24         | Trunk link carrying VLANs 10–70 |
+
+- All EtherChannels are configured in **trunk mode** using **LACP**
+- VLANs 10 through 70 are allowed across all trunks
+- EtherChannels provide higher throughput and link redundancy
+
