@@ -32,6 +32,25 @@ We used only one set of file access groups to reduce complexity, making permissi
 
 ---
 
+## Active Directory Organizational Structure Screenshots
+
+### File Access Security Groups  
+![FileAccess OU and Groups](images/AD%20-%20Groups%20-%20FileAccess.png)
+
+### Instructors OU  
+![Instructors OU](images/AD%20-%20Inscructors.png)
+
+### IT OU  
+![IT OU](images/AD%20-%20IT.png)
+
+### Staff OU  
+![Staff OU](images/AD%20-%20Staff.png)
+
+### Students OU  
+![Students OU](images/AD%20-%20Students.png)
+
+---
+
 # Shared Folder Directory and Permissions Configuration
 
 ## 1. Purpose
