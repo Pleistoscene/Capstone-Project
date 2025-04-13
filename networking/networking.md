@@ -180,7 +180,8 @@ EtherChannel is used to increase bandwidth and provide redundancy between switch
 - Virtual IPs (`.254`) used as default gateway for each VLAN
 - Priority and preemption ensure failover to R2 if R1 goes down
 
-📷 *Screenshot:* `show standby brief` from R1 and R2
+![Standby Brief](images/ssb-1.png)
+![Standby Brief](images/ssb-2.png)
 
 ### Dynamic Routing
 - **RIPv2** has been enabled on both R1 and R2 to allow automatic advertisement of all internal VLAN subnets.
