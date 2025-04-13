@@ -127,18 +127,6 @@ This document outlines the core addressing, segmentation, connectivity, redundan
 
 ### ACLs
 ACLs are used to segment traffic, ensuring only authorized services are reachable while allowing general internet access.
-
-#### ACL_STUDENT_INTERNET_ONLY
-**Purpose:** Restrict Student VLAN (VLAN 40) to internal services only (DNS, DHCP, Web) and allow full internet access.
-
-- Allow DNS (UDP/TCP port 53) to internal and external DNS
-- Allow DHCP replies from DC-01 and DC-02
-- Allow HTTP/HTTPS to internal web server (192.168.10.12)
-- Deny all internal VLAN access (10–70)
-- Permit all remaining traffic (Internet)
-
-**Applied to:** `GigabitEthernet0/0/0.40` (VLAN 40 - Students)
-
 #### ACL_LIMITED_DC_IT
 **Purpose:** Permit core AD services for domain communication and block other internal access.
 
@@ -153,7 +141,19 @@ ACLs are used to segment traffic, ensuring only authorized services are reachabl
 - `GigabitEthernet0/0/0.60` (VLAN 60 - Library)
 - `GigabitEthernet0/0/0.70` (VLAN 70 - Lab)
 
-![ACL-List](images/ACL-CMD.png)
+![ACL-List](images/ACL-CMD-1.png)
+
+#### ACL_STUDENT_INTERNET_ONLY
+**Purpose:** Restrict Student VLAN (VLAN 40) to internal services only (DNS, DHCP, Web) and allow full internet access.
+
+- Allow DNS (UDP/TCP port 53) to internal and external DNS
+- Allow DHCP replies from DC-01 and DC-02
+- Allow HTTP/HTTPS to internal web server (192.168.10.12)
+- Deny all internal VLAN access (10–70)
+- Permit all remaining traffic (Internet)
+
+**Applied to:** `GigabitEthernet0/0/0.40` (VLAN 40 - Students)
+![ACL-List](images/ACL-CMD-2.png)
 
 ## Redundancy
 
