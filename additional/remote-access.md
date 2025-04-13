@@ -3,6 +3,8 @@
 ## Overview
 This document explains how SSH access is configured on all routers and switches in the RAHJ.local network. It also details how the administrator (Aaron Queskekapow) securely manages the infrastructure **from the IT Management PC**, which is the **only workstation allowed to access core infrastructure such as servers and network devices**.
 
+![Remote](images/remote-work.png)
+
 ## SSH Configuration on All Cisco Devices
 
 All routers (R1, R2) and switches (S1–S4) have been configured for secure SSH access.
