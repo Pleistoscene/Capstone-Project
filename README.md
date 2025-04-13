@@ -30,8 +30,9 @@ This capstone project demonstrates our ability to plan, implement, and secure a 
 - **Web & Email Services**: Secure Apache-hosted site (rahj.ca) and Microsoft 365 for domain-based email
 
 ## Domain
-- **Internal**: RAHJ.local (AD DS domain)
-- **External**: rahj.ca (DNS hosted by GoDaddy, points to internal website)
+- **Internal Domain**: RAHJ.local (Windows Active Directory)
+- **External Domain**: rahj.ca (managed via GoDaddy DNS)
+- **Email Provider**: Microsoft 365 (configured with rahj.ca)
 
 ## Group 1
 - **Aaron Queskekapow** – Lead Infrastructure & Systems
