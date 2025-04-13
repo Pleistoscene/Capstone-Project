@@ -70,7 +70,7 @@ This document outlines the core addressing, segmentation, connectivity, redundan
 - DHCP is **centrally managed on DC-01** and replicated to DC-02 for redundancy using **DHCP Failover Load Balance** mode.
 - Each VLAN has a defined DHCP range, lease time, and excluded static blocks.
 
-📷 *Screenshot:* DHCP Manager showing all scopes + PowerShell output using `Get-DhcpServerv4Scope`
+![DHCP](images/DC-01-DHCP-DNS.png)
 
 ### Static IPs – Use Case and Configuration
 - Devices like domain controllers (DC-01, DC-02), file server (FS-01), web server, switches (S1–S4), and printers are configured with static IPs.
