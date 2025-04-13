@@ -1,6 +1,8 @@
 # RAHJ.ca Web Server – Security Hardening Documentation
 This document details all security measures implemented on the [RAHJ.ca](https://rahj.ca) production web server to ensure confidentiality, integrity, and availability of services.
 
+![Website](images/Website.png)
+
 ## 1. SSL/TLS & HTTPS Setup
 - Enabled HTTPS using **Let’s Encrypt SSL certificate**:
   - `fullchain.pem` and `privkey.pem` installed via Certbot.
