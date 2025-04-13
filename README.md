@@ -48,9 +48,9 @@ This capstone project demonstrates our ability to plan, implement, and secure a 
 
 ## Group 1
 - **Aaron Queskekapow** – Lead Infrastructure & Systems
-- **Ravneet Kaur**
-- **Harpreet Singh**
-- **Jaskirat Kaur Brar**
+- **Ravneet Kaur** - Server and Services Administrator
+- **Harpreet Singh** - Active Directory and Group Policy Manager
+- **Jaskirat Kaur Brar** - Presentation and Demo Coordinator
 
 ## How to Use
 This repository is designed for educational demonstration purposes. Config files and documentation can be reused for labs, IT infrastructure templates, or future learning environments. Ensure appropriate modifications are made for production environments.
