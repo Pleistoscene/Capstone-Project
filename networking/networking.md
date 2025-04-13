@@ -108,7 +108,7 @@ This document outlines the core addressing, segmentation, connectivity, redundan
 - VLANs 10–70 represent logical groupings (Servers, IT, Staff, Students, etc.). VLAN 999 used for ParkingLot/default trunk.
 - All switches are configured with proper VLAN membership and access/trunk modes.
 
-📷 *Screenshot:* `show vlan brief` output from S1
+![Vlan](images/Show-Vlan-Brief.png)
 
 ### Subnetting
 |   VLAN | Name       | Subnet          |
