@@ -1,34 +1,52 @@
-# MITT NSA630 Capstone Project
+# NSA630 Capstone Project – RAHJ High School Infrastructure
 
-## Overview
+Welcome to the official repository for the MITT NSA630 Capstone Project by Team Pleistoscene. This project showcases the design, configuration, and deployment of a fully functional and secure IT infrastructure for a fictional high school, RAHJ High.
 
-This repository contains the complete documentation and configuration files for the NSA630 Capstone Project at MITT. The goal of this project was to design and implement a functional, secure, and redundant IT infrastructure for a small school environment.
+## Project Overview
 
-## Scenario
+This capstone project demonstrates our ability to plan, implement, and secure a real-world network for a small educational institution. Key components include:
 
-A new small school requires a complete IT infrastructure. The solution must provide:
-- Internet access
-- Directory services (Active Directory)
-- DNS and DHCP
-- Email services
-- Website
-- Network segmentation and VLANs
-- Redundancy at Layer 2 and Layer 3
-- Security hardening and access control
-- Secured GPO's
+- Network topology and VLAN segmentation
+- Redundant routing with HSRP and NAT failover
+- Active Directory, DNS, and DHCP on Windows Server 2025
+- Web and email services hosted internally
+- Group Policy Objects for centralized management
+- Switch and router security hardening
+- Internal Apache-based website (rahj.ca)
 
-## Technologies Used
+## 🛠 Technologies Used
 
-- 2 Cisco Routers & 4 Switches (Configured via CLI)
-- Windows Server 2025 (Standard Desktop Experience)
-- Ubuntu 24.04 LTS
-- 2 School PC Towers (DC-01 && FS-01)
-- 1 TP-Link Wifi Router
+- Cisco Routers & Switches (CLI-based)
+- Windows Server 2025 (GUI)
+- Ubuntu 24.04 LTS (Apache2 Web Server)
+- Proxmox VE (Virtualization)
+- Microsoft Exchange Server
+- Group Policy Management Console (GPMC)
+- GoDaddy DNS Management
+- GitHub for documentation
 
-## Team
+## Key Features
 
-- Aaron Queskekapow – Lead Network Designer & Sysadmin
+- **Security Hardening**: ACLs, SSH-only access, banner warnings, port security, and GPO restrictions
+- **Redundancy**: HSRP-enabled routers with NAT redundancy for failover
+- **Segmentation**: VLANs assigned for Students, Staff, IT, Servers, Classrooms, Library, Lab, and Guest Wi-Fi
+- **Monitoring**: Security auditing via GPOs and centralized logging
+- **Web & Email Hosting**: SSL-enabled Apache site hosted on Ubuntu VM; Microsoft Exchange handling email under `rahj.ca`
+
+## 🌐 Domain
+
+- **Internal**: RAHJ.local (AD DS domain)
+- **External**: rahj.ca (DNS hosted by GoDaddy, points to web/email services)
+
+## 👥 Team Pleistoscene
+
+- **Aaron Queskekapow** – Lead Infrastructure & Systems
+- *(other members here and their roles)*
+
+## How to Use
+
+This repository is designed for educational demonstration purposes. Config files and documentation can be reused for labs, IT infrastructure templates, or future learning environments. Ensure appropriate modifications are made for production environments.
 
 ## License
 
-This project is part of an educational assignment and is not licensed for commercial use.
+This project is for academic use under MITT guidelines. No commercial use without written permission.
