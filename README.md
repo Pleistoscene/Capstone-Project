@@ -29,12 +29,12 @@ This capstone project demonstrates our ability to plan, implement, and secure a 
 - **Monitoring & Control**: GPO-based restrictions, login auditing, user policies, and centralized DNS/DHCP
 - **Web & Email Services**: Secure Apache-hosted site (rahj.ca) and Microsoft 365 for domain-based email
 
-## Repository Structure
-├── configurations/ 
-├── diagrams/ 
-├── networking/ 
-├── security hardening/          
-├── server & services/     
+## Repository Structure  
+├── configurations/  
+├── diagrams/  
+├── networking/  
+├── security hardening/    
+├── server & services/  
 
 ## Domain
 - **Internal Domain**: RAHJ.local (Windows Active Directory)
