@@ -36,7 +36,7 @@ This capstone project demonstrates our ability to plan, implement, and secure a 
 | `configurations/`      | Cisco device configs for routers (R1, R2) and switches (S1–S4), including VLANs, HSRP, SSH, etc. |
 | `diagrams/`            | Network topology diagrams, IP address maps, and VLAN layout visuals (PT screenshots, Lucidchart) |
 | `networking/`          | IP addressing schemes, DHCP scopes, subnetting plans, NAT logic, and inter-VLAN routing details  |
-| `security hardening/`  | ACL configurations, port security, router/switch hardening commands.                             |
+| `security hardening/`  | ACL configurations, port security, router/switch hardening commands, website security.           |
 | `server & services/`   | Windows Server 2025 setup for AD DS, DNS, DHCP; Apache site config; Microsoft 365 & rahj.ca setup|
 
 
