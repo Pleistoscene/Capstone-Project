@@ -23,11 +23,11 @@ This capstone project demonstrates our ability to plan, implement, and secure a 
 - GoDaddy DNS (rahj.ca management)
 
 ## Key Features
-- **Security Hardening**: ACLs, SSH-only access, banner warnings, port security, and GPO restrictions
-- **Redundancy**: HSRP-enabled routers with NAT redundancy for failover
-- **Segmentation**: VLANs assigned for Students, Staff, IT, Servers, Classrooms, Library, Lab, and Guest Wi-Fi
-- **Monitoring**: Security auditing via GPOs and centralized logging
-- **Web & Email Hosting**: SSL-enabled Apache site hosted on Ubuntu VM; Microsoft Exchange handling email under `rahj.ca`
+- **Security Hardening**: Password protection, SSH-only remote access, banners, ACLs, and port security on all switches and routers
+- **Redundancy**: Two routers (R1 & R2) using HSRP with NAT failover for internet-facing services
+- **VLAN Segmentation**: Dedicated VLANs for Servers, IT, Staff, Students, Classrooms, Library, and Lab
+- **Monitoring & Control**: GPO-based restrictions, login auditing, user policies, and centralized DNS/DHCP
+- **Web & Email Services**: Secure Apache-hosted site (rahj.ca) and Microsoft 365 for domain-based email
 
 ## Domain
 - **Internal**: RAHJ.local (AD DS domain)
