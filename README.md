@@ -46,7 +46,7 @@ This capstone project demonstrates our ability to plan, implement, and secure a 
 - **External Domain**: rahj.ca (managed via GoDaddy DNS)
 - **Email Provider**: Microsoft 365 (configured with rahj.ca)
 
-## RAHJ RAPTORS!!
+## Group 1
 - **Aaron Queskekapow** – Lead Infrastructure & Systems
 - *(other members here and their roles)*
 
