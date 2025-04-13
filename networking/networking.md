@@ -96,7 +96,7 @@ This document outlines the core addressing, segmentation, connectivity, redundan
 ### VLAN Implementation
 |   VLAN | Name       | Interface Assigned               | Purpose                            |
 |-------:|:-----------|:---------------------------------|------------------------------------|
-|     10 | Servers    | S1: F0/1-3                       | AD, DNS, DHCP, Fileshare, Backups  |
+|     10 | Servers    | S1: F0/1-3,  S2: F0/1            | AD, DNS, DHCP, Fileshare, Backups  |
 |     20 | IT         | S1: F0/4                         | IT/Admin Access                    |
 |     30 | Staff      | S1: F0/5-10                      | Office PCs/Printer/Staff-Wifi      |
 |     40 | Students   | S2: F0/10                        | Student Wifi                       |
