@@ -41,7 +41,7 @@ Set security headers inside the HTTPS virtual host to mitigate common web threat
 | `Permissions-Policy`         | Blocks camera, mic, location abuse |
 | `Strict-Transport-Security`  | Forces HTTPS and resists downgrade attacks |
 
-## 🛡3. Fail2Ban – Brute Force Protection
+## 3. Fail2Ban – Brute Force Protection
 Installed and configured **Fail2Ban** to block SSH brute-force attempts.
 
 ### Installed via:
