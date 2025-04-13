@@ -172,7 +172,8 @@ EtherChannel is used to increase bandwidth and provide redundancy between switch
   - S2 ↔ S4 using Po1 on F0/23–F0/24
 - Trunk links carry VLANs 10–70 with LACP (`channel-group 1 mode active`)
 
-📷 *Screenshot:* `show etherchannel summary` on S1 and S2
+![Ether-Channel](images/Ether-Channel-S1.png)
+![Ether-Channel](images/Ether-Channel-S2.png)
 
 ### FHRP – HSRP
 - R1 and R2 use **HSRP** on G0/0/0 subinterfaces
