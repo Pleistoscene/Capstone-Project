@@ -59,7 +59,8 @@ Domain-joined devices (e.g., PCs, FS-01, and web server) were secured with:
 - **NTFS permissions on shared folders**
 - **Drive mapping via GPO** (read-only access to shares)
 
-📷 *Screenshot:* GPMC Group Policy editor showing settings under "SecurityAudit" GPO
+![GPOs](images/gpo-domain-policy.png)
+![GPOs](images/gpo-student-re.png)
 
 ## Monitoring and Scanning
 
@@ -73,7 +74,7 @@ Monitoring is handled internally via Windows Security Auditing:
 - **Event Viewer used** for reviewing logs
 - **Syslog/SNMP not in use**, but was planned for future
 
-📷 *Screenshot:* GPMC showing SecurityAudit settings, Event Viewer logs
+![GPO SecurityAudit](images/gpo-secaduit.png)
 
 ## VLAN & ACL Enforcement
 
