@@ -90,7 +90,8 @@ Segmentation is enforced through VLANs and inbound router ACLs:
   - Denies unnecessary cross-VLAN access
   - Allows Internet access
 
-📷 *Screenshot:* `show access-lists`, router interface config (`ip access-group`)
+![ACLs](images/ACL-CMD-1.png)
+![ACLs](images/ACL-CMD-2.png)
 
 ## Summary for Security Hardening
 
