@@ -153,9 +153,9 @@ ACLs are used to segment traffic, ensuring only authorized services are reachabl
 - `GigabitEthernet0/0/0.60` (VLAN 60 - Library)
 - `GigabitEthernet0/0/0.70` (VLAN 70 - Lab)
 
-📷 *Screenshot:* `show access-lists` or running-config from router with `ip access-list` section
+![ACL-List](images/ACL-CMD.png)
 
-## 🔁 Redundancy
+## Redundancy
 
 ### EtherChannel
 
