@@ -48,7 +48,9 @@ This capstone project demonstrates our ability to plan, implement, and secure a 
 
 ## Group 1
 - **Aaron Queskekapow** – Lead Infrastructure & Systems
-- *(other members here and their roles)*
+- **Ravneet Kaur**
+- **Harpreet singh**
+- **Jaskirat Kaur Brar**
 
 ## How to Use
 This repository is designed for educational demonstration purposes. Config files and documentation can be reused for labs, IT infrastructure templates, or future learning environments. Ensure appropriate modifications are made for production environments.
