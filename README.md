@@ -1,6 +1,6 @@
 # NSA630 Capstone Project – RAHJ High School Infrastructure
 
-Welcome to the official repository for the MITT NSA630 Capstone Project by Team Pleistoscene. This project showcases the design, configuration, and deployment of a fully functional and secure IT infrastructure for a fictional high school, RAHJ High.
+Welcome to the official repository for the MITT NSA630 Capstone Project by Group 1. This project showcases the design, configuration, and deployment of a fully functional and secure IT infrastructure for a fictional high school, RAHJ High.
 
 ## Project Overview
 
