@@ -29,12 +29,15 @@ This capstone project demonstrates our ability to plan, implement, and secure a 
 - **Monitoring & Control**: GPO-based restrictions, login auditing, user policies, and centralized DNS/DHCP
 - **Web & Email Services**: Secure Apache-hosted site (rahj.ca) and Microsoft 365 for domain-based email
 
-## Repository Structure  
-├── configurations/  
-├── diagrams/  
-├── networking/  
-├── security hardening/    
-├── server & services/  
+## Repository Structure
+| Folder                 | Description                                                                                      |
+|------------------------|--------------------------------------------------------------------------------------------------|
+| `configurations/`      | Cisco device configs for routers (R1, R2) and switches (S1–S4), including VLANs, HSRP, SSH, etc. |
+| `diagrams/`            | Network topology diagrams, IP address maps, and VLAN layout visuals (PT screenshots, Lucidchart) |
+| `networking/`          | IP addressing schemes, DHCP scopes, subnetting plans, NAT logic, and inter-VLAN routing details  |
+| `security hardening/`  | ACL configurations, port security, router/switch hardening commands.                             |
+| `server & services/`   | Windows Server 2025 setup for AD DS, DNS, DHCP; Apache site config; Microsoft 365 & rahj.ca setup|
+
 
 ## Domain
 - **Internal Domain**: RAHJ.local (Windows Active Directory)
