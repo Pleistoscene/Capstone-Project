@@ -21,6 +21,7 @@ This capstone project demonstrates our ability to plan, implement, and secure a 
 - Group Policy Management (GPMC)
 - GitHub for documentation
 - GoDaddy DNS (rahj.ca management)
+- PC Towers for Servers
 
 ## Key Features
 - **Security Hardening**: Password protection, SSH-only remote access, banners, ACLs, and port security on all switches and routers
