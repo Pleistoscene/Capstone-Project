@@ -195,7 +195,8 @@ router rip
  network 192.168.0.0
 ```
 
-📷 *Screenshot:* `show ip protocols` or `show ip route rip` output from R1 and R2 showing learned routes
+![IP Protocols](images/sipp-1.png)
+![IP Protocols](images/sipp-2.png)
 
 ## Summary
 
