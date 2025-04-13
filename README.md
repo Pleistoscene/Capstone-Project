@@ -49,7 +49,7 @@ This capstone project demonstrates our ability to plan, implement, and secure a 
 ## Group 1
 - **Aaron Queskekapow** – Lead Infrastructure & Systems
 - **Ravneet Kaur**
-- **Harpreet singh**
+- **Harpreet Singh**
 - **Jaskirat Kaur Brar**
 
 ## How to Use
