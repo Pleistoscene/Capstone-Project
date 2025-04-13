@@ -22,8 +22,6 @@ Routers R1 and R2 were secured using Cisco best practices. Configurations includ
 - **SSH-only access** (`transport input ssh`)
 - **Timeouts and session control**
 
-📷 *Screenshot:* `show run | section line`, `show login`, `show ip ssh`
-
 ## Switch Hardening
 
 Each access and distribution switch (S1–S4) was hardened using the following measures:
