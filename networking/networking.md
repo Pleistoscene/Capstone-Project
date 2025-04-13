@@ -153,6 +153,7 @@ ACLs are used to segment traffic, ensuring only authorized services are reachabl
 - Permit all remaining traffic (Internet)
 
 **Applied to:** `GigabitEthernet0/0/0.40` (VLAN 40 - Students)
+
 ![ACL-List](images/ACL-CMD-2.png)
 
 ## Redundancy
