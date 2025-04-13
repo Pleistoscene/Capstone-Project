@@ -5,21 +5,22 @@ Welcome to the official repository for the MITT NSA630 Capstone Project by Group
 ## Project Overview
 This capstone project demonstrates our ability to plan, implement, and secure a real-world network for a small educational institution. Key components include:
 
-- Network topology and VLAN segmentation
+- VLAN-based network segmentation
 - Redundant routing with HSRP and NAT failover
-- Active Directory, DNS, and DHCP on Windows Server 2025
-- Group Policy Objects for centralized management
-- Switch and router security hardening
-- Internal Apache-based website (rahj.ca)
+- Windows Server 2025 with AD DS, DNS, and DHCP
+- Internal web hosting (rahj.ca) using Apache on Ubuntu
+- Microsoft 365 integration for email
+- Network security via ACLs, port security, and hardening
+- Group Policy for access control and auditing
 
 ## 🛠 Technologies Used
-- Cisco Routers & Switches (CLI-based)
+- Cisco Routers & Switches (CLI)
 - Windows Server 2025 (GUI)
 - Ubuntu 24.04 LTS (Apache2 Web Server)
-- Microsoft Exchange Server
-- Group Policy Management Console (GPMC)
-- GoDaddy DNS Management
+- Microsoft 365 (Email & DNS Integration)
+- Group Policy Management (GPMC)
 - GitHub for documentation
+- GoDaddy DNS (rahj.ca management)
 
 ## Key Features
 - **Security Hardening**: ACLs, SSH-only access, banner warnings, port security, and GPO restrictions
