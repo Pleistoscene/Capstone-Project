@@ -13,7 +13,7 @@ This capstone project demonstrates our ability to plan, implement, and secure a 
 - Network security via ACLs, port security, and hardening
 - Group Policy for access control and auditing
 
-## 🛠 Technologies Used
+## Technologies Used
 - Cisco Routers & Switches (CLI)
 - Windows Server 2025 (GUI)
 - Ubuntu 24.04 LTS (Apache2 Web Server)
