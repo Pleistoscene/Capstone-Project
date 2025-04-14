@@ -157,5 +157,5 @@ A GPO was created to automate the mapping of the shared folder to all domain use
 
 | Version | Date       | Description                                           | Author             |
 |---------|------------|-------------------------------------------------------|--------------------|
-| 1.0     | 2025-04-03 | Initial configuration                                 | Aaron Queskekapow  |
-| 1.1     | 2025-04-05 | Added Special permission explanation and enhancements | Aaron Queskekapow  |
+| 1.0     | 2025-04-03 | Initial configuration                                 | Harpreet Singh|
+| 1.1     | 2025-04-05 | Added Special permission explanation and enhancements | Harpreet Singh  |
