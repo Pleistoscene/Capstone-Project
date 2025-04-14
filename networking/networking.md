@@ -89,7 +89,7 @@ This document outlines the core addressing, segmentation, connectivity, redundan
 - Devices across all VLANs can reach each other as intended, except where restricted by ACLs.
 - Testing included ICMP, SMB, RDP, and domain join operations.
 
-![IT Ping](images/IT-Ping-Network)
+![IT Ping](images/IT-Ping-Network.png)
 
 ## Segmentation & Security
 
