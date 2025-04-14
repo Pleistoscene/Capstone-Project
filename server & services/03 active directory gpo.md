@@ -10,8 +10,8 @@
 
 | Version | Date       | Author   | Description                                  |
 |---------|------------|----------|----------------------------------------------|
-| 1.0     | 2025-04-09 | Aaron  | Initial creation of GPO documentation        |
-| 1.1     | 2025-04-11 | Aaron    | Added SecurityAudit scope and filtering info |
+| 1.0     | 2025-04-09 | Ravneet  | Initial creation of GPO documentation        |
+| 1.1     | 2025-04-11 | Ravneet    | Added SecurityAudit scope and filtering info |
 
 ![GPOs](images/GPO.png)
 
