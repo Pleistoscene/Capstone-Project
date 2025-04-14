@@ -83,13 +83,13 @@ This document outlines the core addressing, segmentation, connectivity, redundan
 - NAT with HSRP (Hot Standby Router Protocol) ensures automatic failover of outbound internet access.
 - Domain-joined clients and the web server can access external domains.
 
-📷 *Screenshot:* Web browser open on a lab PC reaching www.google.com
+![Ping Google](images/Classroom-P-Google.png)
 
 ### Host-to-Host Reachability
 - Devices across all VLANs can reach each other as intended, except where restricted by ACLs.
 - Testing included ICMP, SMB, RDP, and domain join operations.
 
-📷 *Screenshot:* Ping test from IT PC to Lab, Library, and Server VLANs
+![IT Ping](images/IT-Ping-Network)
 
 ## Segmentation & Security
 
