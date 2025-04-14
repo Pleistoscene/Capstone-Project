@@ -1,0 +1,266 @@
+S2#show running-config
+Building configuration...
+
+Current configuration : 5611 bytes
+!
+! Last configuration change at 03:22:14 UTC Mon Mar 8 1993
+!
+version 15.2
+no service pad
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname S2
+!
+boot-start-marker
+boot-end-marker
+!
+enable secret 5 $1$I7jh$KaZeov/4yEJxvdRQWsD/k.
+!
+username rahj_itadmin secret 5 $1$KqSF$r1a9Xx3laVYnKys1cajmw/
+no aaa new-model
+system mtu routing 1500
+!
+!
+!
+!
+!
+!
+!
+ip dhcp snooping vlan 10,20,30,40,50,60,70
+ip dhcp snooping
+no ip domain-lookup
+ip domain-name RAHJ.local
+login block-for 60 attempts 3 within 60
+!
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+spanning-tree vlan 10,20,30,50,60,70 priority 8192
+spanning-tree vlan 40 priority 4096
+!
+vlan internal allocation policy ascending
+!
+!
+!
+!
+!
+!
+interface Port-channel1
+ switchport trunk native vlan 999
+ switchport trunk allowed vlan 10,20,30,40,50,60,70,999
+ switchport mode trunk
+!
+interface FastEthernet0/1
+ description DC-02 (VLAN 10)
+ switchport access vlan 10
+ switchport mode access
+ switchport port-security maximum 3
+ switchport port-security violation  restrict
+ switchport port-security mac-address sticky
+ switchport port-security mac-address sticky 0015.5d0a.0a00
+ switchport port-security mac-address sticky 001b.216a.b0ad
+ switchport port-security
+ spanning-tree portfast
+ spanning-tree bpduguard enable
+ ip dhcp snooping trust
+!
+interface FastEthernet0/2
+ switchport access vlan 999
+ switchport mode access
+ shutdown
+ spanning-tree portfast
+ spanning-tree bpduguard enable
+!
+interface FastEthernet0/3
+ switchport access vlan 999
+ switchport mode access
+ shutdown
+ spanning-tree portfast
+ spanning-tree bpduguard enable
+!
+interface FastEthernet0/4
+ switchport access vlan 999
+ switchport mode access
+ shutdown
+ spanning-tree portfast
+ spanning-tree bpduguard enable
+!
+interface FastEthernet0/5
+ switchport access vlan 999
+ switchport mode access
+ shutdown
+ spanning-tree portfast
+ spanning-tree bpduguard enable
+!
+interface FastEthernet0/6
+ switchport access vlan 999
+ switchport mode access
+ shutdown
+ spanning-tree portfast
+ spanning-tree bpduguard enable
+!
+interface FastEthernet0/7
+ switchport access vlan 999
+ switchport mode access
+ shutdown
+ spanning-tree portfast
+ spanning-tree bpduguard enable
+!
+interface FastEthernet0/8
+ switchport access vlan 999
+ switchport mode access
+ shutdown
+ spanning-tree portfast
+ spanning-tree bpduguard enable
+!
+interface FastEthernet0/9
+ switchport access vlan 999
+ switchport mode access
+ shutdown
+ spanning-tree portfast
+ spanning-tree bpduguard enable
+!
+interface FastEthernet0/10
+ description Student-Wifi (VLAN 40)
+ switchport access vlan 40
+ switchport mode access
+ spanning-tree bpduguard enable
+!
+interface FastEthernet0/11
+ switchport access vlan 999
+ switchport mode access
+ shutdown
+ spanning-tree portfast
+ spanning-tree bpduguard enable
+!
+interface FastEthernet0/12
+ switchport access vlan 999
+ switchport mode access
+ shutdown
+ spanning-tree portfast
+ spanning-tree bpduguard enable
+!
+interface FastEthernet0/13
+ switchport access vlan 999
+ switchport mode access
+ shutdown
+ spanning-tree portfast
+ spanning-tree bpduguard enable
+!
+interface FastEthernet0/14
+ switchport access vlan 999
+ switchport mode access
+ shutdown
+ spanning-tree portfast
+ spanning-tree bpduguard enable
+!
+interface FastEthernet0/15
+ switchport access vlan 999
+ switchport mode access
+ shutdown
+ spanning-tree portfast
+ spanning-tree bpduguard enable
+!
+interface FastEthernet0/16
+ switchport access vlan 999
+ switchport mode access
+ shutdown
+ spanning-tree portfast
+ spanning-tree bpduguard enable
+!
+interface FastEthernet0/17
+ switchport access vlan 999
+ switchport mode access
+ shutdown
+ spanning-tree portfast
+ spanning-tree bpduguard enable
+!
+interface FastEthernet0/18
+ switchport access vlan 999
+ switchport mode access
+ shutdown
+ spanning-tree portfast
+ spanning-tree bpduguard enable
+!
+interface FastEthernet0/19
+ switchport access vlan 999
+ switchport mode access
+ shutdown
+ spanning-tree portfast
+ spanning-tree bpduguard enable
+!
+interface FastEthernet0/20
+ switchport access vlan 999
+ switchport mode access
+ shutdown
+ spanning-tree portfast
+ spanning-tree bpduguard enable
+!
+interface FastEthernet0/21
+ description To S1
+ switchport trunk native vlan 999
+ switchport trunk allowed vlan 10,20,30,40,50,60,70,999
+ switchport mode trunk
+!
+interface FastEthernet0/22
+ description To S3
+ switchport trunk native vlan 999
+ switchport trunk allowed vlan 10,20,30,40,50,60,70,999
+ switchport mode trunk
+!
+interface FastEthernet0/23
+ description Port-Channel to S4
+ switchport trunk native vlan 999
+ switchport trunk allowed vlan 10,20,30,40,50,60,70,999
+ switchport mode trunk
+ channel-group 1 mode active
+!
+interface FastEthernet0/24
+ description Port-Channel to S4
+ switchport trunk native vlan 999
+ switchport trunk allowed vlan 10,20,30,40,50,60,70,999
+ switchport mode trunk
+ channel-group 1 mode active
+!
+interface GigabitEthernet0/1
+ switchport trunk native vlan 999
+ switchport trunk allowed vlan 10,20,30,40,50,60,70,999
+ switchport mode trunk
+!
+interface GigabitEthernet0/2
+ switchport access vlan 999
+ switchport mode access
+ switchport nonegotiate
+ shutdown
+ spanning-tree portfast
+ spanning-tree bpduguard enable
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+interface Vlan20
+ description IT Management
+ ip address 192.168.20.12 255.255.255.0
+!
+ip default-gateway 192.168.20.254
+ip http server
+ip http secure-server
+ip ssh version 2
+!
+no vstack
+banner motd ^CAuthorized access only! Violators will be prosecuted.^C
+!
+line con 0
+line vty 0 4
+ login local
+ transport input ssh
+line vty 5 15
+ login local
+ transport input ssh
+!
+end
