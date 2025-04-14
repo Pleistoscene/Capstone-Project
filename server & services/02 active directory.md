@@ -2,7 +2,7 @@
 # Active Directory
 
 **Domain:** RAHJ.local  
-**Author:** Hapreet  
+**Author:** Harpreet  
 **Date Created:** 2025-04-09  
 **Last Updated:** 2025-04-11  
 **Version:** 1.1  
