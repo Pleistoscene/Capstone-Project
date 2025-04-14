@@ -6,11 +6,11 @@ This network follows a **three-tier hierarchical model**, improving performance,
 ## Network Topologies
 ### Logical Topology
 This diagram shows the logical structure of VLANs, subnets, and gateway IPs for each device group.  
-![Logical-Topology](/images/Logical-Topology.png)
+![Logical-Topology](images/Logical-Topology.png)
 
 ### Physical Topology
 This diagram shows the physical layout of switches, routers, PCs, access points, and how they’re interconnected.  
-![Physical-Topology](/images/Physcial-Topology.png)
+![Physical-Topology](images/Physcial-Topology.png)
 
 ### Core Layer (Backbone)
 - **Purpose:** Provides high-speed, reliable connectivity between Distribution switches and external routers (internet).
