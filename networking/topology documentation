@@ -1,0 +1,66 @@
+# Topology Documentation
+
+## Network Design Model
+This network follows a **three-tier hierarchical model**, improving performance, scalability, and redundancy.
+
+### Core Layer (Backbone)
+- **Purpose:** Provides high-speed, reliable connectivity between Distribution switches and external routers (internet).
+- **Devices:**
+  - **Core Switch (Layer 3):** Interconnects S1, S2, S3, and S4 via EtherChannel/trunk links.
+  - **Router:** Connects internal network to the Internet (via Capstone NAT).
+
+### Distribution Layer
+- **Purpose:** Inter-VLAN routing, redundancy, policy enforcement, and VLAN gateway SVI configuration.
+- **Devices:**
+  - **Router 1 (R1) – IP: 192.168.10.254 to 192.168.70.254** (SVIs per VLAN)
+  - **Router 2 (R2) – Redundant path (HSRP standby)**
+
+### Access Layer
+- **Purpose:** Provides device-level connectivity. Each switch handles VLAN access for users and peripherals.
+- **Switches:**
+  - **S1:** Server Room + Offices
+  - **S2:** Classrooms
+  - **S3:** Library
+  - **S4:** Computer Lab
+  - **Wi-Fi Access Points:** 
+    - `OFF-WiFi` (Staff) — VLAN 30
+    - `STU-WiFi` (Students) — VLAN 40
+
+## Redundancy and High Availability
+- **Spanning Tree Protocol (PVST+)** is used with root bridge priority configured per VLAN.
+- **EtherChannel (LACP)**: Links between S1 to S3, S2 to S4 use FastEthernet EtherChannel bundles.
+- **HSRP** on R1 and R2 ensures gateway failover.
+
+## VLAN and IP Subnet Structure
+| VLAN ID | Name         | Subnet              | Gateway            | Purpose                              |
+|---------|--------------|---------------------|--------------------|--------------------------------------|
+| 10      | Servers      | 192.168.10.0/24     | 192.168.10.254     | DC, DNS, DHCP, Web Server, Backup DC |
+| 20      | IT           | 192.168.20.0/24     | 192.168.20.254     | IT Admin PC                          |
+| 30      | Staff        | 192.168.30.0/24     | 192.168.30.254     | Office PCs, Staff Wi-Fi              |
+| 40      | Students     | 192.168.40.0/24     | 192.168.40.254     | Student Wi-Fi                        |
+| 50      | Classrooms   | 192.168.50.0/24     | 192.168.50.254     | CL-PCs (Instructors Only)            |
+| 60      | Library      | 192.168.60.0/24     | 192.168.60.254     | Library PCs & Printer                |
+| 70      | Lab          | 192.168.70.0/24     | 192.168.70.254     | LAB-PCs & Printer                    |
+
+## Wireless Access Design
+| Access Point    | VLAN | Subnet              | SSID          | Devices Served       |
+|-----------------|------|---------------------|---------------|----------------------|
+| OFF-WiFi        | 30   | 192.168.30.0/24     | Staff-WiFi    | Staff Laptops        |
+| STU-WiFi        | 40   | 192.168.40.0/24     | Student-WiFi  | Student Laptops      |
+
+## Key Server IPs (Located in Server Room)
+| Server     | IP Address       | Role                                 |
+|------------|------------------|--------------------------------------|
+| DC-01      | 192.168.10.10    | Primary Domain Controller, DNS, DHCP |
+| FS-01      | 192.168.10.11    | File Sharing Server                  |
+| SRV-01     | 192.168.10.12    | Web Hosting / Internal Site          |
+| DC-02      | 192.168.10.14    | Redundant Domain Controller          |
+| IT-PC      | 192.168.20.50    | Remote Management Workstation        |
+
+## Summary
+This network was designed to support a small high school using best practices in:
+- VLAN segmentation
+- Redundancy (HSRP, EtherChannel)
+- Layered design
+- Role-based access control (ACLs)
+- Secure internal and limited external access
