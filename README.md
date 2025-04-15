@@ -59,7 +59,7 @@ This project is for academic use under MITT guidelines. No commercial use withou
 
 ## References
 - **Microsoft Docs**
-  - [Active Directory-Integrated DNS Zones](https://learn.microsoft.com/en-us/windows-server/networking/dns/deploy/ad-integrated-zones)
+  - [Active Directory-Integrated DNS Zones](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/plan/active-directory-integrated-dns-zones)
   - [Repadmin Tool](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/repadmin)
 - **Ubuntu Docs**
   - [Netplan Configuration Reference](https://netplan.io/reference/)
