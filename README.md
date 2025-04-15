@@ -56,3 +56,34 @@ This repository is designed for educational demonstration purposes. Config files
 
 ## License
 This project is for academic use under MITT guidelines. No commercial use without written permission.
+
+## References
+- **Microsoft Docs**
+  - [Active Directory-Integrated DNS Zones](https://learn.microsoft.com/en-us/windows-server/networking/dns/deploy/ad-integrated-zones)
+  - [Repadmin Tool](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/repadmin)
+- **Ubuntu Docs**
+  - [Netplan Configuration Reference](https://netplan.io/reference/)
+- **Cisco Docs**
+  - [Port Security Configuration Guide](https://www.cisco.com/c/en/us/support/docs/lan-switching/port-security/12062-48.html)
+- **GoDaddy Help**
+  - [Manage DNS Records](https://ca.godaddy.com/help/manage-dns-records-680)
+
+### YouTube Tutorials
+- NetworkChuck – [How to Build an Active Directory Lab (2023)](https://www.youtube.com/watch?v=2ToYMhBTwGg)
+- David Bombal – [Configure VLANs, Trunking, and Routing on Cisco Switches](https://www.youtube.com/watch?v=bWvgvBzEA2I)
+- Professor Messer – [CompTIA Network+ DNS Topics](https://www.youtube.com/watch?v=Ph0uNQEqSPc)
+- Chris Titus Tech – [Set Up a DNS Server on Windows Server](https://www.youtube.com/watch?v=HnJrx8reFTg)
+- Windows Ninja – [Install DHCP on Windows Server 2022/2019](https://www.youtube.com/watch?v=liSoMCfqkH4)
+
+### Academic & Lab Resources
+- **MITT MyLearning Labs** – Practical hands-on labs provided by Manitoba Institute of Trades and Technology (MITT) covering Active Directory, DNS, DHCP, GPOs, VLAN configuration, switch/router security, and server roles.
+- **CCNA Coursework (v7.0)** – Cisco Networking Academy materials covering:
+  - Switching, Routing, and Wireless Essentials
+  - Network Security and Troubleshooting
+  - Subnetting and IP Addressing
+  - ACLs and NAT configuration
+  - Redundancy protocols (HSRP, EtherChannel, STP)
+
+### AI Assistance
+- **ChatGPT (OpenAI)** – Provided continuous support with network design decisions, documentation writing, command syntax, troubleshooting, and general best practices throughout the Capstone project.
+
