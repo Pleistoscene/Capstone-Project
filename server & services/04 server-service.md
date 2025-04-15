@@ -1,7 +1,7 @@
 # DNS, DHCP, and Web Server Configuration
 
 **Domain:** RAHJ.local  
-**Author:** Aaron Queskekapow  
+**Author:** Jaskirat Kaur 
 **Date Created:** 2025-04-09  
 **Last Updated:** 2025-04-12  
 **Version:** 1.2  
