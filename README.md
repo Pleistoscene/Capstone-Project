@@ -68,13 +68,6 @@ This project is for academic use under MITT guidelines. No commercial use withou
 - **GoDaddy Help**
   - [Manage DNS Records](https://ca.godaddy.com/help/manage-dns-records-680)
 
-### YouTube Tutorials
-- NetworkChuck – [How to Build an Active Directory Lab (2023)](https://www.youtube.com/watch?v=2ToYMhBTwGg)
-- David Bombal – [Configure VLANs, Trunking, and Routing on Cisco Switches](https://www.youtube.com/watch?v=bWvgvBzEA2I)
-- Professor Messer – [CompTIA Network+ DNS Topics](https://www.youtube.com/watch?v=Ph0uNQEqSPc)
-- Chris Titus Tech – [Set Up a DNS Server on Windows Server](https://www.youtube.com/watch?v=HnJrx8reFTg)
-- Windows Ninja – [Install DHCP on Windows Server 2022/2019](https://www.youtube.com/watch?v=liSoMCfqkH4)
-
 ### Academic & Lab Resources
 - **MITT MyLearning Labs** – Practical hands-on labs provided by Manitoba Institute of Trades and Technology (MITT) covering Active Directory, DNS, DHCP, GPOs, VLAN configuration, switch/router security, and server roles.
 - **CCNA Coursework (v7.0)** – Cisco Networking Academy materials covering:
