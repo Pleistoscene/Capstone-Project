@@ -64,7 +64,7 @@ This project is for academic use under MITT guidelines. No commercial use withou
 - **Ubuntu Docs**
   - [Netplan Configuration Reference](https://netplan.io/reference/)
 - **Cisco Docs**
-  - [Port Security Configuration Guide](https://www.cisco.com/c/en/us/support/docs/lan-switching/port-security/12062-48.html)
+  - [Port Security Configuration Guide](https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst6500/ios/15-4SY/config_guide/sup6T/15_3_sy_swcg_6T/port_security.pdf)
 - **GoDaddy Help**
   - [Manage DNS Records](https://ca.godaddy.com/help/manage-dns-records-680)
 
