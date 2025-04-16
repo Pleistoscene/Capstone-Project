@@ -1,5 +1,4 @@
 # Security Hardening Documentation
-
 **Author:** Aaron Queskekapow  
 **Project:** MITT NSA630 Capstone – Final Infrastructure Security Summary  
 **Domain:** RAHJ.local  
@@ -7,11 +6,9 @@
 **Version:** 1.0  
 
 ## Overview
-
 This document summarizes all security hardening strategies applied across switches, routers, end devices, and domain infrastructure. These measures support confidentiality, integrity, and availability throughout the RAHJ High School network.
 
 ## Router Hardening
-
 Routers R1 and R2 were secured using Cisco best practices. Configurations include:
 
 - **Enable Secret Password** using encrypted `enable secret`
@@ -23,7 +20,6 @@ Routers R1 and R2 were secured using Cisco best practices. Configurations includ
 - **Timeouts and session control**
 
 ## Switch Hardening
-
 Each access and distribution switch (S1–S4) was hardened using the following measures:
 
 - **Port security** on access ports (`switchport port-security`)
@@ -34,10 +30,7 @@ Each access and distribution switch (S1–S4) was hardened using the following m
 - **SSH enabled** and HTTP disabled
 - **Banner and VTY protection**
 
-📷 *Screenshot:* `show port-security`, `show spanning-tree summary`, `show run | include bpdu`
-
 ## Securing Protocols
-
 To ensure secure communication between network devices and management stations:
 
 - **SSH used exclusively** for remote access(IT PC Only)
@@ -45,10 +38,7 @@ To ensure secure communication between network devices and management stations:
 - **HTTPS disabled**, HTTP server turned off
 - **ACLs** applied to restrict traffic at Layer 3
 
-📷 *Screenshot:* `show ip ssh`, `show running-config | include transport`
-
 ## End Device Hardening
-
 Domain-joined devices (e.g., PCs, FS-01, and web server) were secured with:
 
 - **Strong password policies** via Group Policy
@@ -63,7 +53,6 @@ Domain-joined devices (e.g., PCs, FS-01, and web server) were secured with:
 ![GPOs](images/gpo-student-re.png)
 
 ## Monitoring and Scanning
-
 Monitoring is handled internally via Windows Security Auditing:
 
 - **GPO – SecurityAudit** applied to all domain PCs
@@ -77,7 +66,6 @@ Monitoring is handled internally via Windows Security Auditing:
 ![GPO SecurityAudit](images/gpo-secaduit.png)
 
 ## VLAN & ACL Enforcement
-
 Segmentation is enforced through VLANs and inbound router ACLs:
 
 - **ACL_STUDENT_INTERNET_ONLY**:
