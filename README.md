@@ -78,5 +78,5 @@ This project is for academic use under MITT guidelines. No commercial use withou
   - Redundancy protocols (HSRP, EtherChannel, STP)
 
 ### AI Assistance
-- **ChatGPT (OpenAI)** – Provided continuous support with network design decisions, documentation writing, command syntax, troubleshooting, and general best practices throughout the Capstone project.
+- **ChatGPT (OpenAI)** – Provided continuous support with network design decisions, grammar, command syntax, troubleshooting and general best practices throughout the Capstone project.
 
