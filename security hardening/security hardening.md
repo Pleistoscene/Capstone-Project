@@ -26,7 +26,6 @@ Each access and distribution switch (S1–S4) was hardened using the following m
 - **Unused ports disabled**
 - **MAC address sticky** limiting devices per port
 - **BPDU Guard** on edge ports
-- **Spanning Tree Mode PVST+** with priority control
 - **SSH enabled** and HTTP disabled
 - **Banner and VTY protection**
 
