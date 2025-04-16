@@ -74,7 +74,7 @@ Segmentation is enforced through VLANs and inbound router ACLs:
   - Allows full Internet access
 
 - **ACL_LIMITED_DC_IT**:
-  - Allows AD, DNS, DHCP, LDAP, RPC, SMB, HTTP/HTTPS
+  - Allows AD, DNS, DHCP, LDAP, RPC, SMB, HTTPS
   - Denies unnecessary cross-VLAN access
   - Allows Internet access
 
