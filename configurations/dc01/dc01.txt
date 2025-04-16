@@ -1,0 +1,195 @@
+*********************************************************************************************************************
+************************************************* Installed Roles & Features ****************************************
+Display Name                                            Name                       Install State
+------------                                            ----                       -------------
+[X] Active Directory Domain Services                    AD-Domain-Services             Installed
+[X] DHCP Server                                         DHCP                           Installed
+[X] DNS Server                                          DNS                            Installed
+[X] File and Storage Services                           FileAndStorage-Services        Installed
+    [X] File and iSCSI Services                         File-Services                  Installed
+        [X] File Server                                 FS-FileServer                  Installed
+    [X] Storage Services                                Storage-Services               Installed
+[X] Hyper-V                                             Hyper-V                        Installed
+[X] .NET Framework 4.8 Features                         NET-Framework-45-Fea...        Installed
+    [X] .NET Framework 4.8                              NET-Framework-45-Core          Installed
+    [X] WCF Services                                    NET-WCF-Services45             Installed
+        [X] TCP Port Sharing                            NET-WCF-TCP-PortShar...        Installed
+[X] Group Policy Management                             GPMC                           Installed
+[X] Microsoft Defender Antivirus                        Windows-Defender               Installed
+[X] Remote Server Administration Tools                  RSAT                           Installed
+    [X] Role Administration Tools                       RSAT-Role-Tools                Installed
+        [X] AD DS and AD LDS Tools                      RSAT-AD-Tools                  Installed
+            [X] Active Directory module for Windows ... RSAT-AD-PowerShell             Installed
+            [X] AD DS Tools                             RSAT-ADDS                      Installed
+                [X] Active Directory Administrative ... RSAT-AD-AdminCenter            Installed
+                [X] AD DS Snap-Ins and Command-Line ... RSAT-ADDS-Tools                Installed
+            [X] AD LDS Snap-Ins and Command-Line Tools  RSAT-ADLDS                     Installed
+        [X] Hyper-V Management Tools                    RSAT-Hyper-V-Tools             Installed
+            [X] Hyper-V GUI Management Tools            Hyper-V-Tools                  Installed
+            [X] Hyper-V Module for Windows PowerShell   Hyper-V-PowerShell             Installed
+        [X] DHCP Server Tools                           RSAT-DHCP                      Installed
+        [X] DNS Server Tools                            RSAT-DNS-Server                Installed
+[X] System Data Archiver                                System-DataArchiver            Installed
+[X] Windows Admin Center Setup                          WindowsAdminCenterSetup        Installed
+[X] Windows PowerShell                                  PowerShellRoot                 Installed
+    [X] Windows PowerShell 5.1                          PowerShell                     Installed
+[X] Windows Server Backup                               Windows-Server-Backup          Installed
+[X] Wireless LAN Service                                Wireless-Networking            Installed
+[X] WoW64 Support                                       WoW64-Support                  Installed
+[X] XPS Viewer                                          XPS-Viewer                     Installed
+
+*************************************************************************************************************************
+************************************************** Domain Info (AD DS) **************************************************
+PS C:\Users\Administrator> Get-ADDomain
+AllowedDNSSuffixes                 : {}
+ChildDomains                       : {}
+ComputersContainer                 : CN=Computers,DC=RAHJ,DC=local
+DeletedObjectsContainer            : CN=Deleted Objects,DC=RAHJ,DC=local
+DistinguishedName                  : DC=RAHJ,DC=local
+DNSRoot                            : RAHJ.local
+DomainControllersContainer         : OU=Domain Controllers,DC=RAHJ,DC=local
+DomainMode                         : Windows2025Domain
+DomainSID                          : S-1-5-21-3783249723-2961774614-2192086283
+ForeignSecurityPrincipalsContainer : CN=ForeignSecurityPrincipals,DC=RAHJ,DC=local
+Forest                             : RAHJ.local
+InfrastructureMaster               : DC-01.RAHJ.local
+LastLogonReplicationInterval       :
+LinkedGroupPolicyObjects           : {cn={7CE9AD05-757A-4E99-8156-36396FF28AB3},cn=policies,cn=system,DC=RAHJ,DC=local,
+
+                                     cn={6F86F2B2-1C1A-421D-BB6A-BBC241BB94EE},cn=policies,cn=system,DC=RAHJ,DC=local,
+                                     cn={B094B06C-050E-418A-8C6B-70FC25C457C0},cn=policies,cn=system,DC=RAHJ,DC=local,
+                                     cn={021F8D8D-995F-49BA-9854-AC91BBB74BB3},cn=policies,cn=system,DC=RAHJ,DC=local..
+                                     .}
+LostAndFoundContainer              : CN=LostAndFound,DC=RAHJ,DC=local
+ManagedBy                          :
+Name                               : RAHJ
+NetBIOSName                        : RAHJ
+ObjectClass                        : domainDNS
+ObjectGUID                         : ff224100-b8fc-4384-adea-03da8d4f3de2
+ParentDomain                       :
+PDCEmulator                        : DC-01.RAHJ.local
+PublicKeyRequiredPasswordRolling   : True
+QuotasContainer                    : CN=NTDS Quotas,DC=RAHJ,DC=local
+ReadOnlyReplicaDirectoryServers    : {}
+ReplicaDirectoryServers            : {DC-01.RAHJ.local, DC-02.RAHJ.local}
+RIDMaster                          : DC-01.RAHJ.local
+SubordinateReferences              : {DC=ForestDnsZones,DC=RAHJ,DC=local, DC=DomainDnsZones,DC=RAHJ,DC=local,
+                                     CN=Configuration,DC=RAHJ,DC=local}
+SystemsContainer                   : CN=System,DC=RAHJ,DC=local
+UsersContainer                     : CN=Users,DC=RAHJ,DC=local
+
+PS C:\Users\Administrator> Get-ADForest
+ApplicationPartitions : {DC=ForestDnsZones,DC=RAHJ,DC=local, DC=DomainDnsZones,DC=RAHJ,DC=local}
+CrossForestReferences : {}
+DomainNamingMaster    : DC-01.RAHJ.local
+Domains               : {RAHJ.local}
+ForestMode            : Windows2025Forest
+GlobalCatalogs        : {DC-01.RAHJ.local, DC-02.RAHJ.local}
+Name                  : RAHJ.local
+PartitionsContainer   : CN=Partitions,CN=Configuration,DC=RAHJ,DC=local
+RootDomain            : RAHJ.local
+SchemaMaster          : DC-01.RAHJ.local
+Sites                 : {Default-First-Site-Name}
+SPNSuffixes           : {}
+UPNSuffixes           : {student.rahj.ca, rahj.ca}
+
+PS C:\Users\Administrator> Get-ADDomainController
+ComputerObjectDN           : CN=DC-01,OU=Domain Controllers,DC=RAHJ,DC=local
+DefaultPartition           : DC=RAHJ,DC=local
+Domain                     : RAHJ.local
+Enabled                    : True
+Forest                     : RAHJ.local
+HostName                   : DC-01.RAHJ.local
+InvocationId               : 6a45b46d-f9ba-4b8b-8f06-89b1d7e8c37b
+IPv4Address                : 192.168.10.10
+IPv6Address                : ::1
+IsGlobalCatalog            : True
+IsReadOnly                 : False
+LdapPort                   : 389
+Name                       : DC-01
+NTDSSettingsObjectDN       : CN=NTDS Settings,CN=DC-01,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,
+                             DC=RAHJ,DC=local
+OperatingSystem            : Windows Server 2025 Standard Evaluation
+OperatingSystemHotfix      :
+OperatingSystemServicePack :
+OperatingSystemVersion     : 10.0 (26100)
+OperationMasterRoles       : {SchemaMaster, DomainNamingMaster, PDCEmulator, RIDMaster...}
+Partitions                 : {DC=ForestDnsZones,DC=RAHJ,DC=local, DC=DomainDnsZones,DC=RAHJ,DC=local,
+                             CN=Schema,CN=Configuration,DC=RAHJ,DC=local, CN=Configuration,DC=RAHJ,DC=local...}
+ServerObjectDN             : CN=DC-01,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=RAHJ,DC=local
+ServerObjectGuid           : 9673163b-73eb-4aa3-9077-98f000d8a15a
+Site                       : Default-First-Site-Name
+SslPort                    : 636
+
+*****************************************************************************************************************
+************************************************** DNS Zones and Records ****************************************
+PS C:\Users\Administrator> Get-DnsServerZone
+ZoneName                            ZoneType        IsAutoCreated   IsDsIntegrated  IsReverseLookupZone  IsSigned
+--------                            --------        -------------   --------------  -------------------  --------
+_msdcs.RAHJ.local                   Primary         False           True            False                False
+0.in-addr.arpa                      Primary         True            False           True                 False
+10.168.192.in-addr.arpa             Primary         False           True            True                 False
+127.in-addr.arpa                    Primary         True            False           True                 False
+255.in-addr.arpa                    Primary         True            False           True                 False
+rahj.ca                             Primary         False           True            False                False
+RAHJ.local                          Primary         False           True            False                False
+TrustAnchors                        Primary         False           True            False                False
+
+
+PS C:\Users\Administrator> Get-DnsServerResourceRecord -ZoneName "rahj.local"
+HostName                  RecordType Type       Timestamp            TimeToLive      RecordData
+--------                  ---------- ----       ---------            ----------      ----------
+@                         A          1          4/14/2025 4:00:00 PM 00:10:00        192.168.10.10
+@                         A          1          4/11/2025 1:00:00 PM 00:10:00        192.168.10.13
+@                         NS         2          0                    01:00:00        dc-02.rahj.local.
+@                         NS         2          0                    01:00:00        dc-01.rahj.local.
+@                         SOA        6          0                    01:00:00        [266][dc-01.rahj.local.][hostmaster.rahj.local.]
+_msdcs                    NS         2          0                    01:00:00        dc-01.rahj.local.
+_gc._tcp.Default-First... SRV        33         4/11/2025 1:00:00 PM 00:10:00        [0][100][3268][dc-02.rahj.local.]
+_gc._tcp.Default-First... SRV        33         4/11/2025 1:00:00 PM 00:10:00        [0][100][3268][dc-01.rahj.local.]
+_kerberos._tcp.Default... SRV        33         4/11/2025 1:00:00 PM 00:10:00        [0][100][88][dc-02.rahj.local.]
+_kerberos._tcp.Default... SRV        33         4/11/2025 1:00:00 PM 00:10:00        [0][100][88][dc-01.rahj.local.]
+_ldap._tcp.Default-Fir... SRV        33         4/11/2025 1:00:00 PM 00:10:00        [0][100][389][dc-01.rahj.local.]
+_ldap._tcp.Default-Fir... SRV        33         4/11/2025 1:00:00 PM 00:10:00        [0][100][389][dc-02.rahj.local.]
+_gc._tcp                  SRV        33         4/14/2025 11:00:0... 00:10:00        [0][100][3268][dc-02.rahj.local.]
+_gc._tcp                  SRV        33         4/14/2025 4:00:00 PM 00:10:00        [0][100][3268][dc-01.rahj.local.]
+_kerberos._tcp            SRV        33         4/11/2025 1:00:00 PM 00:10:00        [0][100][88][dc-02.rahj.local.]
+_kerberos._tcp            SRV        33         4/11/2025 1:00:00 PM 00:10:00        [0][100][88][dc-01.rahj.local.]
+_kpasswd._tcp             SRV        33         4/11/2025 1:00:00 PM 00:10:00        [0][100][464][dc-02.rahj.local.]
+_kpasswd._tcp             SRV        33         4/11/2025 1:00:00 PM 00:10:00        [0][100][464][dc-01.rahj.local.]
+_ldap._tcp                SRV        33         4/11/2025 1:00:00 PM 00:10:00        [0][100][389][dc-02.rahj.local.]
+_ldap._tcp                SRV        33         4/11/2025 1:00:00 PM 00:10:00        [0][100][389][dc-01.rahj.local.]
+_kerberos._udp            SRV        33         4/11/2025 1:00:00 PM 00:10:00        [0][100][88][dc-02.rahj.local.]
+_kerberos._udp            SRV        33         4/11/2025 1:00:00 PM 00:10:00        [0][100][88][dc-01.rahj.local.]
+_kpasswd._udp             SRV        33         4/11/2025 1:00:00 PM 00:10:00        [0][100][464][dc-02.rahj.local.]
+_kpasswd._udp             SRV        33         4/11/2025 1:00:00 PM 00:10:00        [0][100][464][dc-01.rahj.local.]
+dc-01                     A          1          0                    01:00:00        192.168.10.10
+DC-02                     A          1          0                    01:00:00        192.168.10.13
+DESKTOP-A3RU31U           A          1          4/15/2025 1:00:00 PM 00:20:00        192.168.70.60
+DomainDnsZones            A          1          4/14/2025 4:00:00 PM 00:10:00        192.168.10.10
+DomainDnsZones            A          1          4/11/2025 1:00:00 PM 00:10:00        192.168.10.13
+_ldap._tcp.Default-Fir... SRV        33         4/11/2025 1:00:00 PM 00:10:00        [0][100][389][dc-01.rahj.local.]
+_ldap._tcp.Default-Fir... SRV        33         4/11/2025 1:00:00 PM 00:10:00        [0][100][389][dc-02.rahj.local.]
+_ldap._tcp.DomainDnsZones SRV        33         4/11/2025 1:00:00 PM 00:10:00        [0][100][389][dc-02.rahj.local.]
+_ldap._tcp.DomainDnsZones SRV        33         4/11/2025 1:00:00 PM 00:10:00        [0][100][389][dc-01.rahj.local.]
+ForestDnsZones            A          1          4/14/2025 4:00:00 PM 00:10:00        192.168.10.10
+ForestDnsZones            A          1          4/11/2025 1:00:00 PM 00:10:00        192.168.10.13
+_ldap._tcp.Default-Fir... SRV        33         4/11/2025 1:00:00 PM 00:10:00        [0][100][389][dc-01.rahj.local.]
+_ldap._tcp.Default-Fir... SRV        33         4/11/2025 1:00:00 PM 00:10:00        [0][100][389][dc-02.rahj.local.]
+_ldap._tcp.ForestDnsZones SRV        33         4/11/2025 1:00:00 PM 00:10:00        [0][100][389][dc-02.rahj.local.]
+_ldap._tcp.ForestDnsZones SRV        33         4/11/2025 1:00:00 PM 00:10:00        [0][100][389][dc-01.rahj.local.]
+FS-01                     A          1          4/14/2025 11:00:0... 00:20:00        192.168.10.11
+
+********************************************************************************************************************************************
+*********************************************************DHCP Server & Scope Details********************************************************
+PS C:\Users\Administrator> Get-DhcpServerv4Scope
+ScopeId         SubnetMask      Name           State    StartRange      EndRange        LeaseDuration
+-------         ----------      ----           -----    ----------      --------        -------------
+192.168.30.0    255.255.255.0   STAFF-Pool     Active   192.168.30.50   192.168.30.69   3.00:00:00
+192.168.40.0    255.255.255.0   STUDENTS-Pool  Active   192.168.40.50   192.168.40.129  02:00:00
+192.168.50.0    255.255.255.0   CLASSROOM-Pool Active   192.168.50.50   192.168.50.57   3.00:00:00
+192.168.60.0    255.255.255.0   LIBRARY-Pool   Active   192.168.60.50   192.168.60.55   3.00:00:00
+192.168.70.0    255.255.255.0   LAB-Pool       Active   192.168.70.50   192.168.70.69   3.00:00:00
+
+********************************************************************************************************************************************
+*********************************************************Shares*******************************************************************************
