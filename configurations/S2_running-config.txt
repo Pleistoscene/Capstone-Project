@@ -1,9 +1,9 @@
 S2#show running-config
 Building configuration...
 
-Current configuration : 5830 bytes
+Current configuration : 5671 bytes
 !
-! Last configuration change at 03:21:08 UTC Mon Mar 1 1993 by rahj_itadmin
+! Last configuration change at 00:00:51 UTC Mon Mar 1 1993
 !
 version 15.2
 no service pad
@@ -36,11 +36,8 @@ login block-for 60 attempts 3 within 60
 !
 !
 !
-!
 spanning-tree mode pvst
 spanning-tree extend system-id
-spanning-tree vlan 10,20,30,50,60,70 priority 8192
-spanning-tree vlan 40 priority 4096
 !
 vlan internal allocation policy ascending
 !
@@ -59,9 +56,10 @@ interface FastEthernet0/1
  description DC-02 (VLAN 10)
  switchport access vlan 10
  switchport mode access
- switchport port-security maximum 5
+ switchport port-security maximum 1
  switchport port-security violation  restrict
  switchport port-security mac-address sticky
+ switchport port-security mac-address sticky 0015.5d0a.0a00
  switchport port-security
  spanning-tree portfast
  spanning-tree bpduguard enable
