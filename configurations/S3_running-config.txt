@@ -1,9 +1,7 @@
-S3#show running-config
+S3#show run
 Building configuration...
 
-Current configuration : 8031 bytes
-!
-! Last configuration change at 03:19:16 UTC Mon Mar 1 1993 by rahj_itadmin
+Current configuration : 7811 bytes
 !
 version 15.0
 no service pad
@@ -34,11 +32,8 @@ login block-for 60 attempts 3 within 60
 !
 !
 !
-!
 spanning-tree mode pvst
 spanning-tree extend system-id
-spanning-tree vlan 10,20,30,40,70 priority 8192
-spanning-tree vlan 50,60 priority 4096
 !
 vlan internal allocation policy ascending
 !
@@ -57,7 +52,7 @@ interface FastEthernet0/1
  description Classroom PC (VLAN 50)
  switchport access vlan 50
  switchport mode access
- switchport port-security maximum 5
+ switchport port-security maximum 1
  switchport port-security violation restrict
  switchport port-security mac-address sticky
  switchport port-security
@@ -68,7 +63,7 @@ interface FastEthernet0/2
  description Classroom PC (VLAN 50)
  switchport access vlan 50
  switchport mode access
- switchport port-security maximum 5
+ switchport port-security maximum 1
  switchport port-security violation restrict
  switchport port-security mac-address sticky
  switchport port-security
@@ -79,7 +74,7 @@ interface FastEthernet0/3
  description Classroom PC (VLAN 50)
  switchport access vlan 50
  switchport mode access
- switchport port-security maximum 5
+ switchport port-security maximum 1
  switchport port-security violation restrict
  switchport port-security mac-address sticky
  switchport port-security
@@ -90,7 +85,7 @@ interface FastEthernet0/4
  description Classroom PC (VLAN 50)
  switchport access vlan 50
  switchport mode access
- switchport port-security maximum 5
+ switchport port-security maximum 1
  switchport port-security violation restrict
  switchport port-security mac-address sticky
  switchport port-security
@@ -101,7 +96,7 @@ interface FastEthernet0/5
  description Classroom PC (VLAN 50)
  switchport access vlan 50
  switchport mode access
- switchport port-security maximum 5
+ switchport port-security maximum 1
  switchport port-security violation restrict
  switchport port-security mac-address sticky
  switchport port-security
@@ -112,7 +107,7 @@ interface FastEthernet0/6
  description Classroom PC (VLAN 50)
  switchport access vlan 50
  switchport mode access
- switchport port-security maximum 5
+ switchport port-security maximum 1
  switchport port-security violation restrict
  switchport port-security mac-address sticky
  switchport port-security
@@ -123,7 +118,7 @@ interface FastEthernet0/7
  description Classroom PC (VLAN 50)
  switchport access vlan 50
  switchport mode access
- switchport port-security maximum 5
+ switchport port-security maximum 1
  switchport port-security violation restrict
  switchport port-security mac-address sticky
  switchport port-security
@@ -134,7 +129,7 @@ interface FastEthernet0/8
  description Classroom PC (VLAN 50)
  switchport access vlan 50
  switchport mode access
- switchport port-security maximum 5
+ switchport port-security maximum 1
  switchport port-security violation restrict
  switchport port-security mac-address sticky
  switchport port-security
@@ -145,7 +140,7 @@ interface FastEthernet0/9
  description Library PC (VLAN 60)
  switchport access vlan 60
  switchport mode access
- switchport port-security maximum 5
+ switchport port-security maximum 1
  switchport port-security violation restrict
  switchport port-security mac-address sticky
  switchport port-security
@@ -156,7 +151,7 @@ interface FastEthernet0/10
  description Library PC (VLAN 60)
  switchport access vlan 60
  switchport mode access
- switchport port-security maximum 5
+ switchport port-security maximum 1
  switchport port-security violation restrict
  switchport port-security mac-address sticky
  switchport port-security
@@ -167,7 +162,7 @@ interface FastEthernet0/11
  description Library PC (VLAN 60)
  switchport access vlan 60
  switchport mode access
- switchport port-security maximum 5
+ switchport port-security maximum 1
  switchport port-security violation restrict
  switchport port-security mac-address sticky
  switchport port-security
@@ -178,7 +173,7 @@ interface FastEthernet0/12
  description Library PC (VLAN 60)
  switchport access vlan 60
  switchport mode access
- switchport port-security maximum 5
+ switchport port-security maximum 1
  switchport port-security violation restrict
  switchport port-security mac-address sticky
  switchport port-security
@@ -189,7 +184,7 @@ interface FastEthernet0/13
  description Library PC (VLAN 60)
  switchport access vlan 60
  switchport mode access
- switchport port-security maximum 5
+ switchport port-security maximum 1
  switchport port-security violation restrict
  switchport port-security mac-address sticky
  switchport port-security
@@ -200,7 +195,7 @@ interface FastEthernet0/14
  description Library PC (VLAN 60)
  switchport access vlan 60
  switchport mode access
- switchport port-security maximum 5
+ switchport port-security maximum 1
  switchport port-security violation restrict
  switchport port-security mac-address sticky
  switchport port-security
@@ -211,7 +206,7 @@ interface FastEthernet0/15
  description Library Printer (VLAN 60)
  switchport access vlan 60
  switchport mode access
- switchport port-security maximum 5
+ switchport port-security maximum 1
  switchport port-security violation restrict
  switchport port-security mac-address sticky
  switchport port-security
