@@ -131,7 +131,7 @@ ACLs are used to segment traffic, ensuring only authorized services are reachabl
 **Purpose:** Permit core AD services for domain communication and block other internal access.
 
 - Allow DNS, DHCP, Kerberos, LDAP, Netlogon, RPC, SMB
-- Allow HTTP/HTTPS to internal web server
+- Allow HTTPS to internal web server
 - Deny general access to VLANs 10 and 20
 - Permit all remaining traffic (e.g., internet)
 
@@ -148,7 +148,7 @@ ACLs are used to segment traffic, ensuring only authorized services are reachabl
 
 - Allow DNS (UDP/TCP port 53) to internal and external DNS
 - Allow DHCP replies from DC-01 and DC-02
-- Allow HTTP/HTTPS to internal web server (192.168.10.12)
+- Allow HTTPS to internal web server (192.168.10.12)
 - Deny all internal VLAN access (10–70)
 - Permit all remaining traffic (Internet)
 
