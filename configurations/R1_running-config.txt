@@ -261,8 +261,12 @@ interface GigabitEthernet0/0/1
  negotiation auto
 !
 interface Serial0/1/0
+ no ip address
+ shutdown
 !
 interface Serial0/1/1
+ no ip address
+ shutdown
 !
 interface GigabitEthernet0
  vrf forwarding Mgmt-intf
@@ -281,7 +285,6 @@ ip http authentication local
 no ip http secure-server
 ip tftp source-interface GigabitEthernet0
 ip nat inside source static tcp 192.168.10.12 443 interface GigabitEthernet0/0/1 443
-ip nat inside source static tcp 192.168.10.12 80 interface GigabitEthernet0/0/1 80
 ip nat inside source list RAHJ_LAN interface GigabitEthernet0/0/1 overload
 ip route 0.0.0.0 0.0.0.0 10.128.250.1
 ip ssh version 2
@@ -325,7 +328,7 @@ ip access-list extended ACL_LIMITED_DC_IT
  190 remark DC-01
  190 permit tcp any host 192.168.10.10 eq 445
  200 permit udp any host 192.168.10.10 eq 445
- 210 remark DC-01
+ 210 remark DC-02
  210 permit tcp any host 192.168.10.13 eq 445
  220 permit udp any host 192.168.10.13 eq 445
  230 remark FS-01
